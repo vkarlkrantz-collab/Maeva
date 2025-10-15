@@ -1,3 +1,89 @@
+/* grund css */
 body {
-    background-color: blue;
+    background-color: #f7efe9;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color:#8a6851;
 }
+
+p {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+  /* Header */
+  .header { 
+    display: flex;      
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebded4;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+  }
+  
+  .logo img {
+    max-height: 100px;
+    height: auto;
+    width: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.20);
+  }
+
+  .meny ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .meny li {
+    position: relative;
+  }
+  
+  .meny a {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 25px;
+    display: block;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease;
+    font-weight: 900;
+  }
+  
+.meny a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 0%;
+    height: 2px;
+    background-color: #81a969;
+    transition: width 0.9s ease;
+  }
+  
+  .meny a:hover::after {
+    width: 100%;
+  }
+  
+  .meny a:hover {
+    color: #81a969;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  
+  
