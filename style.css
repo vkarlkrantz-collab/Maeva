@@ -1,0 +1,177 @@
+/* === Grundinställningar === */
+body {
+    background-color: #f7efe9;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 12;
+  }
+  
+  h1 {
+    font-family: "Waterfall", Helvetica, Arial, sans-serif;
+  }
+  
+  h2 {font-family: "Times New Roman";
+  
+  }
+  
+  h3 {font-family: "Waterfall";
+    font-size: 50px;
+  }
+  
+  /* === TYPSNITT === */
+  .waterfall-regular {
+    font-family: "Waterfall", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  /* === Header och Navigering === */
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: 20px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #444;
+  }
+  
+  /* === Hero-sektion === */
+  .hero {
+    background-color: #e6d8cf; /* fallback-färg */
+    background-image: url('hero-bg.jpg'); /* byt ut mot din egen bild */
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.4); /* ljus overlay för läsbarhet */
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-btn {
+    background-color: #000;
+    color: #f7efe9;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  /* === Huvudinnehåll === */
+  
+  
+  main {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .content article {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  
+  
+  /* === Footer === */
+  footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 40px;
+  }
+  
+  /* === Responsiv design === */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero {
+      padding: 60px 20px;
+    }
+  
+    .hero h2 {
+      font-size: 2em;
+    }
+  }
+  
+  
