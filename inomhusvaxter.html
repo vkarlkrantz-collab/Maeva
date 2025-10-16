@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maeva Växtsida</title>
+
+  <!-- Typsnitt och ikoner (valfritt) -->
+  <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- CSS-filer -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="undersidor.css" />
+</head>
+
+<body class="undersida-grid">
+  <header>
+    <div id="header-placeholder"></div>
+  </header>
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <main>
+
+    <h3 style="text-align: center;">Passande växter att odla inomhus</h3>
+    
+    <!-- Modal struktur -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-body">
+          <!-- Innehåll laddas här -->
+        </div>
+      </div>
+    </div>
+
+    <section class="content">
+      <!-- 18 kort -->
+      <!-- Du kan lägga till fler eller färre -->
+      <!-- Alla kort centreras automatiskt -->
+      <!-- Kopiera eller duplicera dessa <article>-element för fler kort -->
+
+      <!-- 1–6 -->
+      <article>
+        <a href="chili.html" class="card-link">
+          <img src="bild1.png" class="article-img" alt="Växt 1" />
+          <h3>Chiliplanta</h3>
+          <p>Såhär odlar du Chiliplanta</p>
+        </a>
+      </article>
+      <article>
+        <a href="" class="card-link">
+          <img src="bild2.png" class="article-img" alt="Växt 2" />
+          <h3>En annan växt</h3>
+          <p>Såhär odlar du en annan växt</p>
+        </a>
+      </article>
+      <article>
+        <a href="#" class="card-link">
+          <img src="bild2.png" class="article-img" alt="Växt 3" />
+          <h3>En annan växt</h3>
+          <p>Såhär odlar du en annan växt</p>
+        </a>
+      </article>
+      <article>
+        <a href="#" class="card-link">
+          <img src="bild2.png" class="article-img" alt="Växt 4" />
+          <h3>En annan växt</h3>
+          <p>Såhär odlar du en annan växt</p>
+        </a>
+      </article>
+      <article>
+        <a href="#" class="card-link">
+          <img src="bild2.png" class="article-img" alt="Växt 5" />
+          <h3>En annan växt</h3>
+          <p> Såhär odlar du en annan växt</p>
+        </a>
+      </article>
+      <article>
+        <a href="#" class="card-link">
+          <img src="bild2.png" class="article-img" alt="Växt 6" />
+          <h3>En annan växt</h3>
+          <p>Såhär odlar du en annan växt</p>
+        </a>
+      </article>
+
+      <!-- 7–12 -->
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 7" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 8" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 9" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 10" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 11" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 12" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+
+      <!-- 13–18 -->
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 13" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 14" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 15" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 16" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 17" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+      <article><a href="#" class="card-link"><img src="bild2.png" class="article-img" alt="Växt 18" /><h3>En annan växt</h3><p>Såhär odlar du en annan växt</p></a></article>
+    </section>
+  </main>
+
+  <script>
+    const modal = document.getElementById("modal");
+    const modalBody = document.getElementById("modal-body");
+    const closeBtn = document.querySelector(".modal .close");
+
+    const cards = document.querySelectorAll(".card-link");
+
+    cards.forEach((card) => {
+      card.addEventListener("click", function (event) {
+        event.preventDefault(); // Stoppa vanlig länknavigering
+
+        const link = card.getAttribute("href");
+
+        // Om länken finns (ex: chili.html)
+        if (link && link !== "#") {
+          // Hämta HTML-innehållet från länken
+          fetch(link)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Kunde inte ladda innehåll.");
+              }
+              return response.text();
+            })
+            .then((html) => {
+              modalBody.innerHTML = html;
+              modal.style.display = "block";
+            })
+            .catch((error) => {
+              modalBody.innerHTML = "<p>Kunde inte ladda sidan.</p>";
+              modal.style.display = "block";
+              console.error(error);
+            });
+        } else {
+          // Om det är ett kort utan länk (fallback till "förstoring")
+          const img = card.querySelector("img")?.outerHTML || "";
+          const title = card.querySelector("h3")?.outerHTML || "";
+          const text = card.querySelector("p")?.outerHTML || "";
+
+          modalBody.innerHTML = img + title + text;
+          modal.style.display = "block";
+        }
+      });
+    });
+
+    // Stäng modal när man klickar på krysset
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+      modalBody.innerHTML = ""; // Töm innehåll
+    });
+
+    // Klick utanför modal stänger den
+    window.addEventListener("click", function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        modalBody.innerHTML = "";
+      }
+    });
+  </script>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => (document.getElementById("footer-placeholder").innerHTML = data));
+  </script>
+</body>
+</html>

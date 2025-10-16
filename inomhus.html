@@ -11,47 +11,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
-  <!-- Extern CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="footer.css">
-
-  <!-- Extra stil för kolumnlayout -->
-  <style>
-    .content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .content article {
-      flex: 1 1 250px;
-      max-width: 300px;
-      background-color: #f8f8f8;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-  </style>
 </head>
 
-  <script src="header.js"></script>
 <body>
   <header>
-  <div id="header-placeholder"></div>
-</header>
+    <div id="header-placeholder"></div>
+  </header>
 
-<script>
-  // Hämta och infoga header.html
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-placeholder').innerHTML = data;
-    });
-</script>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
 
-  <!-- === Hero-sektion === -->
+  <!-- === Hero === -->
   <section class="hero">
     <div class="hero-content">
       <h2>Vilka växter passar här?</h2>
@@ -62,48 +39,51 @@
 
   <main id="content">
     <section class="intro">
-      <h2>Inomhus</h2>
+      <h3>Inomhus</h3>
       <p>Vilka växter passar bäst in inomhus? Här kan du lära dig mer!</p>
     </section>
 
     <section class="content">
-
       <article>
-        <img src="bild1.png" alt="Ljusinsläpp växter" style="width:100%; border-radius: 8px 8px 0 0;">
-        <h3>Ljusinsläpp</h3>
-        <p>Har du tänkt på var du ska placera dina växter?</p>
+        <a href="inomhusvaxter.html" class="card-link">
+          <img src="bild1.png" alt="Ljusinsläpp växter" class="article-img">
+          <h3>Inomhusväxter</h3>
+          <p>Här kan du se vilka växter som passar bra att odla inomhus</p>
+        </a>
       </article>
 
       <article>
-        <img src="bild1.png" alt="Ljusinsläpp växter" style="width:100%; border-radius: 8px 8px 0 0;">
-        <h3>Ljusinsläpp</h3>
-        <p>Har du tänkt på var du ska placera dina växter?</p>
+        <a href="ljusinslapp.html" class="card-link">
+          <img src="bild2.png" alt="Ljusinsläpp växter" class="article-img">
+          <h3>Ljusinsläpp</h3>
+          <p>Har du tänkt på var du ska placera dina växter?</p>
+        </a>
       </article>
 
       <article>
-        <img src="bild1.png" alt="Ljusinsläpp växter" style="width:100%; border-radius: 8px 8px 0 0;">
-        <h3>Växtvård och skötsel</h3>
-        <p>Vad man kan hitta på under pågående årstid</p>
+        <a href="vaxtvard" class="card-link">
+          <img src="bild2.png" alt="Ljusinsläpp växter" class="article-img">
+          <h3>Växtvård och skötsel</h3>
+          <p>Vad man kan hitta på under pågående årstid</p>
+        </a>
       </article>
 
       <article>
-        <img src="bild1.png" alt="Ljusinsläpp växter" style="width:100%; border-radius: 8px 8px 0 0;">
-        <h3>Skadedjur/ohyra</h3>
-        <p>Här ska text in som handlar om skadedjur och ohyra på balkongen.</p>
+        <a href="artiklar.html" class="card-link">
+          <img src="bild2.png" alt="Ljusinsläpp växter" class="article-img">
+          <h3>Artiklar</h3>
+          <p>Inspiration för en grön inomhusmiljö.</p>
+        </a>
       </article>
-
     </section>
   </main>
 
-  <!-- === Lägg in detta i era .html för att få in footer === -->
-<div id="footer-placeholder"></div>
-
-<script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-</script>
-</script>
-
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
 </body>
 </html>

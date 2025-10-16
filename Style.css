@@ -1,164 +1,191 @@
+/* Grundinställningar för body */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #f7efe9;
+  font-family: Arial, sans-serif; /* Typsnitt för hela sidan */
+  margin: 0;                      /* Tar bort standardmarginal */
+  padding: 0;                     /* Tar bort standardpadding */
+  min-height: 100vh;              /* Minsta höjd: hela viewportens höjd */
+  display: flex;                  /* Använder flexbox */
+  flex-direction: column;         /* Staplar innehållet i kolumn */
+  background-color: #f7efe9;      /* Bakgrundsfärg på sidan */
 }
 
-/* Header */
+/* Stil för header */
 header {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-  padding: 20px 10px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  background-color: #fff;         /* Vit bakgrund */
+  border-bottom: 1px solid #ddd; /* Ljus gräns under header */
+  text-align: center;             /* Centrerar text och innehåll */
+  padding: 20px 10px;             /* Inre marginal */
+  position: sticky;               /* Stannar kvar högst upp vid scroll */
+  top: 0;                        /* Positionerad högst upp */
+  z-index: 10;                   /* Ligger ovanför annat innehåll */
 }
 
+/* Stil för rubrik i header */
 header h1 {
-  margin: 0;
-  font-size: 2em;
-  font-family: "Waterfall", Helvetica, Arial, sans-serif;
+  margin: 0;                     /* Tar bort standardmarginal */
+  font-size: 2em;                /* Storlek på text */
+  font-family: "Waterfall", Helvetica, Arial, sans-serif; /* Specifikt typsnitt */
 }
 
+/* Stil för navigationslistan */
 nav ul {
-  list-style: none;
-  margin: 15px 0 0 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+  list-style: none;              /* Tar bort punkter i listan */
+  margin: 15px 0 0 0;            /* Marginal ovanför */
+  padding: 0;                    /* Ingen inre marginal */
+  display: flex;                 /* Flexbox layout */
+  justify-content: center;       /* Centrerar listan horisontellt */
+  gap: 30px;                    /* Mellanrum mellan länkar */
 }
 
+/* Stil för länkar i nav */
 nav a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  text-decoration: none;         /* Tar bort understrykning */
+  color: #000;                   /* Svart textfärg */
+  font-weight: bold;             /* Fet text */
+  transition: color 0.3s ease;  /* Mjuk övergång för färg */
 }
 
+/* Hover-effekt för nav-länkar */
 nav a:hover {
-  color: #444;
+  color: #444;                  /* Mörkare grå vid hover */
 }
 
-/* Main */
+/* Stil för huvudsektion */
 main {
-  flex: 1;
-  padding: 20px;
-  max-width: 1000px;
-  margin: 60px auto;
+  flex: 1;                      /* Tar upp all tillgänglig höjd */
+  padding: 20px;                /* Inre marginal */
+  max-width: 1000px;            /* Maxbredd */
+  margin: 60px auto;            /* Marginal ovan och centrerar horisontellt */
 }
 
-/* Hero-sektion */
+/* Stil för hero-sektionen */
 .hero {
-  background-color: #e6d8cf;
-  background-image: url('hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #000;
-  text-align: center;
-  padding: 100px 20px;
-  position: relative;
+  background-color: #e6d8cf;     /* Bakgrundsfärg */
+  background-image: url('hero-bg.jpg'); /* Bakgrundsbild */
+  background-size: cover;        /* Täcker hela området */
+  background-position: center;   /* Centrerad bild */
+  color: #000;                   /* Textfärg */
+  text-align: center;            /* Centrerar text */
+  padding: 100px 20px;           /* Stor inre marginal */
+  position: relative;            /* Position för pseudo-element */
 }
 
+/* Semi-transparent vitt lager över hero */
 .hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.4);
+  content: "";                  /* Inget innehåll, bara dekor */
+  position: absolute;           /* Positionerad över hela hero */
+  inset: 0;                    /* Täcker hela området */
+  background: rgba(255, 255, 255, 0.4); /* Vitt med 40% opacitet */
 }
 
+/* Innehållet i hero */
 .hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 600px;
-  margin: 0 auto;
+  position: relative;           /* För att ligga över pseudo-element */
+  z-index: 1;                   /* Ovanför overlay */
+  max-width: 600px;             /* Maxbredd */
+  margin: 0 auto;               /* Centrerar blocket */
 }
 
+/* Rubrik i hero */
 .hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  font-family: "Times New Roman";
+  font-size: 2.5em;             /* Stor text */
+  margin-bottom: 10px;          /* Marginal under */
+  font-family: "Times New Roman"; /* Typsnitt */
 }
 
+/* Paragraf i hero */
 .hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-  font-family: "Times New Roman", sans-serif;
+  font-size: 1.2em;             /* Lite större text */
+  margin-bottom: 20px;          /* Marginal under */
+  font-family: "Times New Roman", sans-serif; /* Typsnitt */
 }
 
+/* Knapp i hero */
 .hero-btn {
-  background-color: #000;
-  color: #f7efe9;
-  padding: 12px 24px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #000;       /* Svart bakgrund */
+  color: #f7efe9;               /* Ljus textfärg */
+  padding: 12px 24px;           /* Inre marginal */
+  border-radius: 25px;          /* Rundade hörn */
+  text-decoration: none;        /* Ingen understrykning */
+  font-weight: bold;            /* Fet text */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Mjuka övergångar */
 }
 
+/* Hover-effekt på knapp */
 .hero-btn:hover {
-  background-color: #333;
-  transform: scale(1.05);
+  background-color: #333;       /* Mörkare bakgrund */
+  transform: scale(1.05);       /* Liten förstoring */
 }
 
-/* Intro */
+/* Intro-sektion */
 .intro {
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: center;           /* Centrerar text */
+  margin-bottom: 40px;          /* Marginal under */
 }
 
-/* Innehåll - artiklar */
+/* Layout för innehållskorten */
 .content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  display: grid;                          /* Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Flexibel kolumnbredd */
+  gap: 20px;                             /* Mellanrum mellan kort */
 }
 
+/* Stil för varje artikel (kort) */
 .content article {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
+  background-color: #fff;                 /* Vit bakgrund */
+  border-radius: 10px;                    /* Rundade hörn */
+  padding: 20px;                         /* Inre marginal */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lätt skugga */
+  text-align: center;                    /* Centrerar text */
+  transition: transform 0.3s ease;      /* Mjuk övergång för transform */
 }
 
+/* Hover-effekt för kort */
 .content article:hover {
-  transform: scale(1.10);
-  z-index: 10;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.10);                /* Förstorar kortet */
+  z-index: 10;                          /* Ligger över andra */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Starkare skugga */
 }
 
+/* Stil för bilder i kort */
 .article-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px 8px 0 0;
-  margin-bottom: 15px;
-  object-fit: cover;
+  width: 100%;                         /* Täcker hela kortets bredd */
+  height: auto;                        /* Anpassar höjden automatiskt */
+  border-radius: 8px 8px 0 0;         /* Rundade övre hörn */
+  margin-bottom: 15px;                 /* Marginal under bilden */
+  object-fit: cover;                   /* Täcker utan att förvrängas */
 }
 
-/* Typsnitt */
+/* Klickbara länkar som omsluter hela kortet */
+.card-link {
+  display: block !important;           /* Gör länken till blockelement */
+  color: inherit !important;           /* Ärver färg från text */
+  text-decoration: none !important;    /* Tar bort understrykning */
+  height: 100% !important;              /* Tar upp hela förälderns höjd */
+  cursor: pointer !important;           /* Pekar-hand på hover */
+}
+
+/* Samma för hover, fokus och aktivt läge */
+.card-link:hover,
+.card-link:focus,
+.card-link:active {
+  color: inherit !important;           /* Behåller färgen */
+  text-decoration: none !important;    /* Ingen understrykning */
+}
+
+/* Textstyling för paragrafer */
 p {
-  font-family: "Times New Roman", sans-serif;
-  font-size: 12px;
+  font-family: "Times New Roman", sans-serif; /* Typsnitt */
+  font-size: 12px;                            /* Textstorlek */
 }
 
+/* Rubriker nivå 2 */
 h2 {
-  font-family: "Times New Roman";
+  font-family: "Times New Roman";            /* Typsnitt */
 }
 
+/* Rubriker nivå 3 */
 h3 {
-  font-family: "Waterfall";
-  font-size: 50px;
-}
-
-.waterfall-regular {
-  font-family: "Waterfall", cursive;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Waterfall";                   /* Specifikt typsnitt */
+  font-size: 50px;                            /* Storlek */
 }
