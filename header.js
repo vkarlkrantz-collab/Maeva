@@ -1,0 +1,38 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="indexE.css"> 
+
+
+    
+    <title> Maeva header </title>
+
+</head>
+<body>
+    
+
+ <header class="header">
+
+
+ <div class="logo-container">
+    <a href="startsida.html" class="logo">
+        <img src="maevalogo6.png" alt="Maeva logo">
+    </a>
+</div>
+      
+
+<nav class="meny">
+<ul>
+    <li><a href="startsida.html">Startsida</a></li>
+    <li><a href="#">Inomhus</a></li>
+    <li><a href="#">Balkong</a></li>
+    <li><a href="#">Trädgård</a></li>
+    <li><a href="Tips.html">Tips</a></li>
+    <li><a href="#">Om oss</a></li>
+</ul>
+</nav>
+      
+</header>
+      
+    
+</body>

@@ -39,8 +39,17 @@
   <script src="header.js"></script>
 <body>
   <header>
-    "<div id="header-placeholder"></div>
-  </header>
+  <div id="header-placeholder"></div>
+</header>
+
+<script>
+  // Hämta och infoga header.html
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
 
   <!-- === Hero-sektion === -->
   <section class="hero">
