@@ -5,3 +5,5 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("header-placeholder").innerHTML = data;
       });
   });
+
+  
