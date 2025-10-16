@@ -66,12 +66,11 @@
 
     <section class="content">
 
-
-          <article>
-    <img src="bild1.png" alt="Ljusinsläpp växter" style="width:100%; border-radius: 8px 8px 0 0;">
-    <h3>Ljusinsläpp</h3>
-    <p>Har du tänkt på var du ska placera dina växter?</p>
-  </article>
+      <article>
+        <img src="bild1.png" alt="Ljusinsläpp växter" style="width:100%; border-radius: 8px 8px 0 0;">
+        <h3>Ljusinsläpp</h3>
+        <p>Har du tänkt på var du ska placera dina växter?</p>
+      </article>
 
       <article>
         <img src="bild1.png" alt="Ljusinsläpp växter" style="width:100%; border-radius: 8px 8px 0 0;">
@@ -91,45 +90,18 @@
         <p>Här ska text in som handlar om skadedjur och ohyra på balkongen.</p>
       </article>
 
-      
-
-
-
     </section>
   </main>
 
-  <footer>
-    <div class="footer-columns">
-      <div class="footer-column">
-        <h3>Resurser</h3>
-        <ul>
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Länk2</a></li>
-          <li><a href="#">Länk3</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>Kontakt</h3>
-        <ul>
-          <li><a href="#">Kontakta oss</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-    </div>
+  <!-- === Lägg in detta i era .html för att få in footer === -->
+<div id="footer-placeholder"></div>
 
-    <!-- Sociala medier ikoner -->
-    <div class="social-icons">
-      <a href="https://www.facebook.com/dittkonto" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/dittkonto" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-
-    <p>&copy; 2025 Älvan AB. Alla rättigheter förbehållna.</p>
-  </footer>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+</script>
+</script>
 
 </body>
 </html>
