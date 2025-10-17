@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css"  href="style.css"> <!--denna är för att länka in css, ändra namn på href-->
-     <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title> Maeva hemsida </title>
 
 </head>
 <body>
-    <h1> Välkommen till Trädgårdssidan</h1>
+    <div class="hero-image">
+  <div class="hero-text">
+    <h1>Välkommen till Trädgårdssidan</h1>
+    <p>Här kan du läsa om plantering, odling och mycket mer.</p>
+  </div>
+</div>
+
+   <!-- <img src="svetlana-butovskaya-zRUwLvlwFd4-unsplash.jpg "width=100%  alt="pink flowers in a garden">-->
+   
+        <div class="grid-container">
+            <div class="item">Årstidsanpassat</div>
+            <div class="item">Plantering på hösten</div>
+            <div class="item">Vinterförvara dina dahlior</div>
+            <div class="item">Vilka växter passar här?</div>
+        </div>
 
     <main>
-        <section>
+        <section> 
             <h2>Här kan du läsa om aktuella saker.</h2>
             <p> Hösten är här och det är faktiskt den bästa tiden att planetera eftersom vädret är svalar, det är fuktigare i jorden och plantorna hinner etablera sig innan vintern. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis debitis numquam praesentium facilis cumque autem fugiat dolorum iste labore illum, cum illo possimus. Illum, quasi? Voluptates molestias provident tempore. </p>
         </section>
+
+
     </main>
 
 
 
     <footer></footer>
 <script src="script.js"> </script><!-- denna är för att länka i javascript, brukar ligga längst ner, ändra namn på src-->
-<script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-</script>
-</script>
+
 </body>
 
 </html>

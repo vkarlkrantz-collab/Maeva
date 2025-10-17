@@ -4,26 +4,72 @@
       background-color: #f7efe9;
       padding-top: 100px;
     }
+body, html {
+    height: 100%;
+}
 
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(232, 228, 228, 0.5), rgba(245, 242, 242, 0.5)), url("svetlana-butovskaya-zRUwLvlwFd4-unsplash.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
     h1 {
-        background-color: #ebded4;
+       
+
         font-style: italic;
         font-size: 5rem;
-        color: #8a6851;
+        color: #000;
         margin-top: 60px;
         margin-bottom: 100px;
         }
         
         h2 {
-            background-color: #ebded4;
-            font-size: 2.5rem;
-            color:#8a6851;
+            
+           font-size: 2.5rem;
+            color:#f7efe9;
             margin-bottom: 100px;
         }
-        
+
+
+.grid-container{
+  margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid   s:1fr 1fr;
+    gap:1em;
+    align-content:end; 
+}
+
+.item {
+    padding: 2em;
+    background-color: #fcc0c5;
+    color:white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
     p {
       color: #000;
-      background-color: #ebded4;
+    
       font-size: 1.5rem;
       margin-top: 100px;
       margin-bottom: 40px;
