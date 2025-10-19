@@ -12,20 +12,20 @@ body {
   }
   
   h1 {
-    font-family: "Waterfall", Helvetica, Arial, sans-serif;
+    font-family: "Tangerine", Helvetica, Arial, sans-serif;
   }
   
   h2 {font-family: "Times New Roman";
   
   }
   
-  h3 {font-family: "Waterfall";
+  h3 {font-family: "Tangerine";
     font-size: 50px;
   }
   
   /* === TYPSNITT === */
   .waterfall-regular {
-    font-family: "Waterfall", cursive;
+    font-family: "Tangerine", cursive;
     font-weight: 400;
     font-style: normal;
   }
