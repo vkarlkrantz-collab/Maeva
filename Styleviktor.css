@@ -70,6 +70,11 @@ main {
   position: relative;            /* Position för pseudo-element */
 }
 
+.herostart {
+  width: 100%;
+  max-height: 550px;
+}
+
 /* Semi-transparent vitt lager över hero */
 .hero::after {
   content: "";                  /* Inget innehåll, bara dekor */
@@ -189,3 +194,26 @@ h3 {
   font-family: "Waterfall";                   /* Specifikt typsnitt */
   font-size: 50px;                            /* Storlek */
 }
+/* Filtreringsknapparna */
+.filter-tags {
+  display: flex;                   /* Gör så att knappar ligger på rad */
+  justify-content: center;         /* Centrerar knapparna horisontellt */
+  gap: 1em;                       /* Mellanrum mellan knapparna */
+  margin-bottom: 2em;             /* Marginal under filterraden */
+}
+
+.filter-tag {
+  padding: 0.5em 1em;             /* Inre avstånd i knappar */
+  border: none;                   /* Tar bort standardram */
+  cursor: pointer;                /* Visar hand-pointer när man hovrar */
+  background-color: #e0e0e0;     /* Ljusgrå bakgrund */
+  border-radius: 8px;             /* Runda hörn */
+  font-weight: bold;              /* Fet stil på texten */
+  transition: background-color 0.3s; /* Mjuk övergång på färg vid hover/aktiv */
+}
+
+.filter-tag.active {
+  background-color: #c0392b;      /* Röd bakgrund när aktiv */
+  color: white;                   /* Vit text när aktiv */
+}
+

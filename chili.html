@@ -3,134 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maeva Växtsida</title>
+  <title>Chili</title>
 
-  <!-- Typsnitt och ikoner (valfritt) -->
-  <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- CSS-filer -->
+  <!-- Typsnitt & CSS -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="undersidor.css" />
+
+  <!-- Lokal stil för röda taggknappar -->
+  <style>
+    .filter-tags {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin: 2em 0;
+    }
+
+    .filter-tag {
+      background-color: #c0392b;
+      color: white;
+      padding: 0.6em 1.2em;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: default;
+      font-family: inherit;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 2px 5px rgba(192, 57, 43, 0.3);
+    }
+
+
+    h3 {
+      text-align: center;
+    }
+  </style>
 </head>
 
+<body>
 
-
-  <script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      });
-  </script>
+  <!-- Visuella taggar för växten -->
+  <div class="filter-tags">
+    <button class="filter-tag">Ätbart</button>
+    <button class="filter-tag">Svårskött</button>
+    <button class="filter-tag">Ljuskrävande</button>
+  </div>
 
   <main>
+    <h3>Chili</h3>
 
-    <h3 style="text-align: center;">Chiliplanta</h3>
-
-    <img src="chiliV.png" alt="Chiliplanta" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
-    
+    <!-- Växtbild -->
+    <img src="chiliV.png" alt="Chiliplanta"
+     style="display: block; margin: 0 auto; width: 400px; height: auto;" />
+    <!-- Odling: Sådd -->
     <section>
-  <h4>Sådd och uppdrivning</h4>
-  <ul>
-    <li><strong>När:</strong> Börja förodla inomhus redan i januari–mars, eller tidigare för sorter med lång utvecklingstid som Capsicum chinense.</li>
-    <li><strong>Jord:</strong> Använd näringsfattig såjord till en början, i krukor med god dränering.</li>
-    <li><strong>Förhållanden:</strong> Placera sådden varmt (20–24 °C jordtemperatur) och ljust. Använd värmematta om det behövs.</li>
-    <li><strong>Ljus:</strong> Ge mycket ljus, gärna 12–16 timmar per dag, med hjälp av växtbelysning som LED-lampor eller lysrör.</li>
-  </ul>
-</section>
+      <h4>Sådd och uppdrivning</h4>
+      <ul>
+        <li><strong>När:</strong> Förodla inomhus i januari–mars (eller tidigare för långsamma sorter).</li>
+        <li><strong>Jord:</strong> Använd näringsfattig såjord i krukor med dränering.</li>
+        <li><strong>Förhållanden:</strong> Placera varmt (20–24 °C) och ljust. Använd värmematta vid behov.</li>
+        <li><strong>Ljus:</strong> 12–16 timmar per dag med växtbelysning rekommenderas.</li>
+      </ul>
+    </section>
 
-<section>
-  <h4>Omskolning och skötsel</h4>
-  <ul>
-    <li><strong>Omskolning:</strong> När plantan har fått sitt första karaktärsbladpar och är tillräckligt stor, skola om den i en lite större kruka med näringsrikare planteringsjord. Undvik att röra vid stjälken, håll istället i bladen.</li>
-    <li><strong>Krukor:</strong> För snabbväxande plantor kan flera omskolningar behövas. Gå stegvis upp i kruka för att plantan ska bli stabil och välförgrenad.</li>
-    <li><strong>Vattning:</strong> Håll jorden fuktig men inte blöt.</li>
-    <li><strong>Näring:</strong> Vattna med näring regelbundet när plantan etablerat sig.</li>
-    <li><strong>Temperatur:</strong> Fortsätt placera plantan varmt (22–26 °C dagtid) och undvik drag och kalla fönster.</li>
-  </ul>
-</section>
+    <!-- Odling: Omskolning -->
+    <section>
+      <h4>Omskolning och skötsel</h4>
+      <ul>
+        <li><strong>Omskolning:</strong> När plantan fått sitt första karaktärsbladpar, plantera om i näringsrik jord.</li>
+        <li><strong>Krukor:</strong> Byt till större krukor stegvis för stabilare plantor.</li>
+        <li><strong>Vattning:</strong> Jorden ska vara fuktig, inte blöt.</li>
+        <li><strong>Näring:</strong> Börja gödsla när plantan är etablerad.</li>
+        <li><strong>Temperatur:</strong> Undvik drag och kalla fönster. 22–26 °C dagtid är idealiskt.</li>
+      </ul>
+    </section>
 
-<section>
-  <h4>För utplantering och övervintring</h4>
-  <ul>
-    <li><strong>Utplantering:</strong> Plantera utomhus när nattemperaturen är över 10 °C och all risk för frost är över. Håll gärna plantan i kruka på ett soligt och skyddat ställe.</li>
-    <li><strong>Övervintring:</strong> Chili kan övervintras inomhus. Klipp ner plantan till ungefär en tredjedel för en frodigare och mer välförgrenad planta nästa säsong.</li>
-  </ul>
-</section>
-
-    
-    <!-- Modal struktur -->
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div id="modal-body">
-          <!-- Innehåll laddas här -->
-        </div>
-      </div>
-    </div>
-
+    <!-- Odling: Utplantering -->
+    <section>
+      <h4>Utplantering och övervintring</h4>
+      <ul>
+        <li><strong>Utplantering:</strong> Sker när det är över 10 °C nattetid. Skyddad, solig plats rekommenderas.</li>
+        <li><strong>Övervintring:</strong> Klipp ner plantan till 1/3 och förvara inomhus under vintern.</li>
+      </ul>
+    </section>
   </main>
 
-  <script>
-    const modal = document.getElementById("modal");
-    const modalBody = document.getElementById("modal-body");
-    const closeBtn = document.querySelector(".modal .close");
-
-    const cards = document.querySelectorAll(".card-link");
-
-    cards.forEach((card) => {
-      card.addEventListener("click", function (event) {
-        event.preventDefault(); // Stoppa vanlig länknavigering
-
-        const link = card.getAttribute("href");
-
-        // Om länken finns (ex: chili.html)
-        if (link && link !== "#") {
-          // Hämta HTML-innehållet från länken
-          fetch(link)
-            .then((response) => {
-              if (!response.ok) {
-                throw new Error("Kunde inte ladda innehåll.");
-              }
-              return response.text();
-            })
-            .then((html) => {
-              modalBody.innerHTML = html;
-              modal.style.display = "block";
-            })
-            .catch((error) => {
-              modalBody.innerHTML = "<p>Kunde inte ladda sidan.</p>";
-              modal.style.display = "block";
-              console.error(error);
-            });
-        } else {
-          // Om det är ett kort utan länk (fallback till "förstoring")
-          const img = card.querySelector("img")?.outerHTML || "";
-          const title = card.querySelector("h3")?.outerHTML || "";
-          const text = card.querySelector("p")?.outerHTML || "";
-
-          modalBody.innerHTML = img + title + text;
-          modal.style.display = "block";
-        }
-      });
-    });
-
-    // Stäng modal när man klickar på krysset
-    closeBtn.addEventListener("click", function () {
-      modal.style.display = "none";
-      modalBody.innerHTML = ""; // Töm innehåll
-    });
-
-    // Klick utanför modal stänger den
-    window.addEventListener("click", function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-        modalBody.innerHTML = "";
-      }
-    });
-  </script>
-
-  
 </body>
 </html>

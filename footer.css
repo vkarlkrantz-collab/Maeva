@@ -13,7 +13,7 @@ footer {
   text-align: center;
   padding: 120px 20px 10px 20px;
   font-size: 14px;
-  color: #040404;
+  color: #ffffff;
 }
 
 .footer-columns {
@@ -45,7 +45,7 @@ footer {
 
 .footer-column ul li a {
   text-decoration: none;
-  color: #030303;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
@@ -59,7 +59,7 @@ footer {
 
 .social-icons a {
   margin: 0 10px;
-  color: #000000;
+  color: #ffffff;
   font-size: 20px;
   text-decoration: none;
   transition: color 0.3s ease;
