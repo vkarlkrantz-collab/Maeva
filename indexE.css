@@ -36,13 +36,13 @@ p {
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.681);
 }
 
-
+/* de två översta kolumnerna*/
 .toppen {
 display: flex;
 justify-content: space-evenly;
 align-items: center;
 padding: 20px;
-margin-top: 50px;
+margin-top: 60px;
 box-sizing: border-box;
 }
 
@@ -50,17 +50,48 @@ box-sizing: border-box;
   width: 40%;
   text-align: center;
   background-color: #ebded4;
-  height: 400px;
+  height: 520px;
   border-radius: 20px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.514);
+  transition: all 0.5s ease;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.382);
+  flex-direction: column;
+  justify-content: center;
 }
 
+/* blombytet i kolumn 1*/
+
+.bildBox {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  margin: 10px auto;
+  overflow: hidden;
+  border-radius: 5px;
+  border-style: double;
+}
+
+.bildBox img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.bildBox img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+/* mitten kolumnen*/
 .mitten {
   background-color: #fcc0c5;
   align-items: center;
   padding: 20px;
   margin-top: 50px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.514);
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.382);
   margin-bottom: 50px;
   width: 100%;
   height: 500px;
@@ -83,6 +114,7 @@ box-sizing: border-box;
   letter-spacing: 0.8px; 
 }
 
+/* de nedersta kolumnerna*/
 .sista { 
   width: 100%;
   display: flex;
@@ -98,7 +130,8 @@ box-sizing: border-box;
   background-color: #ebded4;
   height: 400px;
   border-radius: 20px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.514);
+  transition: all 0.3s ease;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.382);
 }
 
 .snabblänk h2 { 
@@ -115,6 +148,8 @@ margin: 0 auto;
 font-weight: 300;        
 letter-spacing: 0.8px; 
 }
+
+
 
 /* tips*/
 
