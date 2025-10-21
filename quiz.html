@@ -3,22 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vilken växt passar dig?</title>
+  <title>quiz</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" href="quiz.css">
 </head>
+
 <body>
+      
+
   <div class="quiz-container">
+
+<a href="startsida.html"> 
+    <button class="tillbakaKnapp">Gå tillbaka</button>
+</a>
+
     <h1>Vilken växt passar dig?</h1>
     
-    <div id="question-container">
-      <p id="question">Fråga kommer här</p>
-      <div id="answers">
+    <div id="fråga-container">
+    
+    <h3 id="fråga">Fråga kommer här</h3>
+      <div id="svar">
         <!-- Svarsknappar skapas här -->
       </div>
     </div>
 
-    <button id="next-btn">Nästa</button>
-    <div id="result" class="hidden"></div>
+    <button id="nästaFråga">Nästa</button>
+    <div id="resultat" class="gömd"></div>
   </div>
 
   <script src="quiz.js"></script>

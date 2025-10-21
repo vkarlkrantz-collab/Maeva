@@ -1,72 +1,72 @@
-const questions = [
-    {
-      question: "Var vill du ha växten?",
-      answers: [
-        { text: "Inomhus", type: "Monstera" },
-        { text: "Utomhus", type: "Rosor" }
-      ]
-    },
-    {
-      question: "Hur mycket vill du sköta om den?",
-      answers: [
-        { text: "Lite", type: "Basilika" },
-        { text: "Medel", type: "Tomater" },
-        { text: "Mycket", type: "Pioner" }
-      ]
-    },
-    {
-      question: "Vill du ha något dekorativt stora blad eller blommor?",
-      answers: [
-        { text: "Stora blad", type: "Elefantöra" },
-        { text: "Blommor", type: "Rosor" }
-      ]
-    }
-  ];
-  
-  let currentQuestion = 0;
-  let selections = [];
-  
-  const questionEl = document.getElementById("question");
-  const answersEl = document.getElementById("answers");
-  const nextBtn = document.getElementById("next-btn");
-  const resultEl = document.getElementById("result");
-  
-  function showQuestion() {
-    answersEl.innerHTML = "";
-    const q = questions[currentQuestion];
-    questionEl.innerText = q.question;
-  
-    q.answers.forEach(answer => {
-      const button = document.createElement("button");
-      button.innerText = answer.text;
-      button.addEventListener("click", () => selectAnswer(answer.type));
-      answersEl.appendChild(button);
-    });
+const frågor = [
+  {
+    fråga: "Var vill du ha växten?",
+    svar: [
+      { text: "Inomhus", type: "Monstera" },
+      { text: "Utomhus", type: "Rosor" }
+    ]
+  },
+  {
+    fråga: "Hur mycket vill du sköta om den?",
+    svar: [
+      { text: "Lite", type: "Basilika" },
+      { text: "Medel", type: "Tomater" },
+      { text: "Mycket", type: "Pioner" }
+    ]
+  },
+  {
+    fråga: "Vill du ha något dekorativt – stora blad eller blommor?",
+    svar: [
+      { text: "Stora blad", type: "Elefantöra" },
+      { text: "Blommor", type: "Rosor" }
+    ]
   }
-  
-  function selectAnswer(type) {
-    selections.push(type);
-    currentQuestion++;
-    if(currentQuestion < questions.length) {
-      showQuestion();
-    } else {
-      showResult();
-    }
+];
+
+let nuvarandeFråga = 0;
+let valdaSvar = [];
+
+// Matcha ID-namn med HTML
+const frågaEl = document.getElementById("fråga");
+const svarEl = document.getElementById("svar");
+const nästaKnapp = document.getElementById("nästaFråga");
+const resultatEl = document.getElementById("resultat");
+
+function visaFråga() {
+  svarEl.innerHTML = "";
+  const q = frågor[nuvarandeFråga];
+  frågaEl.innerText = q.fråga;
+
+  q.svar.forEach(alternativ => {
+    const knapp = document.createElement("button");
+    knapp.innerText = alternativ.text;
+    knapp.addEventListener("click", () => väljSvar(alternativ.type));
+    svarEl.appendChild(knapp);
+  });
+}
+
+function väljSvar(type) {
+  valdaSvar.push(type);
+  nuvarandeFråga++;
+  if (nuvarandeFråga < frågor.length) {
+    visaFråga();
+  } else {
+    visaResultat();
   }
-  
-  function showResult() {
-    questionEl.classList.add("hidden");
-    answersEl.classList.add("hidden");
-    nextBtn.classList.add("hidden");
-  
-    // Enkel räkning av mest valda typ
-    const counts = {};
-    selections.forEach(x => counts[x] = (counts[x] || 0) + 1);
-    const winner = Object.keys(counts).reduce((a,b) => counts[a] > counts[b] ? a : b);
-  
-    resultEl.innerText = `Den växt som passar dig bäst är: ${winner}!`;
-    resultEl.classList.remove("hidden");
-  }
-  
-  showQuestion();
-  
+}
+
+function visaResultat() {
+  frågaEl.classList.add("gömd");
+  svarEl.classList.add("gömd");
+  nästaKnapp.classList.add("gömd");
+
+  const counts = {};
+  valdaSvar.forEach(x => counts[x] = (counts[x] || 0) + 1);
+  const vinnare = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b);
+
+  resultatEl.innerText = `Den växt som passar dig bäst är: ${vinnare}! 🌱`;
+  resultatEl.classList.remove("gömd");
+}
+
+// Starta quizet
+visaFråga();
