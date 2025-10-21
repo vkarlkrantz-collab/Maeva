@@ -1,54 +1,132 @@
+/* === bas === */
 body {
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    background-color: #f0f9f0;
-  }
-  
-h1 {
-    font-size: 70px;
-    padding-top: 70px;
-    text-align: center;
-    color:#000000;
-     font-family: "Tangerine", cursive;
+    min-height: 100vh;
+    background-color: #f7efe9;
+    margin: 0;
+    padding: 0;
 }
 
-h3 {
+/* === Rubriker === */
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+    font-family: "Tangerine", cursive;
+}
+
+#fråga {
     font-size: 30px;
+    font-weight: normal;
 }
 
-  .quiz-container {
+/* === Quiz-rutan === */
+.quiz-container {
     background-color: #fff;
-    padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    width: 60%;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    width: 70%;
     text-align: center;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 80px;
-  }
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-  .tillbakaKnapp {
-    float: left;
-    margin-top: 10px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  .hidden {
+/* === Svarsknappar === */
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 70px;
+    margin: 5px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fcc0c5;
+    color: #dc6874;
+    font: 800 18px 'Times New Roman', Times, serif;
+    letter-spacing: 1.8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.126);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #ebded4;
+    transform: scale(1.1);
+}
+
+/* === Knapparnas container === */
+#svar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* === Tillbaka-knapp === */
+#tillbakaKnapp {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    background-color: #ffffff;
+    font-size: 16px;
+    padding: 8px 16px;
+    width: 130px;
+    height: 40px;
+}
+
+#tillbakaKnapp:hover {
+    background-color: #fcc0c5;
+}
+
+/* === Dölj element === */
+.gömd, .hidden {
     display: none;
-  }
-  
+}
+
+/* === Bilder === */
+.resultat-box {
+    text-align: center;
+}
+
+.resultatBild {
+    width: 90%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+/* === Responsiv design === */
+@media (max-width: 700px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    #fråga {
+        font-size: 24px;
+    }
+
+    .quiz-container {
+        width: 75%;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    #resultat {
+        font-size: 20px;
+    }
+}

@@ -19,22 +19,22 @@
   <div class="quiz-container">
 
 <a href="startsida.html"> 
-    <button class="tillbakaKnapp">Gå tillbaka</button>
+    <button id="tillbakaKnapp">Gå tillbaka</button>
 </a>
 
-    <h1>Vilken växt passar dig?</h1>
+    <h2>Vilken växt passar dig?</h2>
     
-    <div id="fråga-container">
-    
-    <h3 id="fråga">Fråga kommer här</h3>
-      <div id="svar">
-        <!-- Svarsknappar skapas här -->
-      </div>
+<div id="quiz">
+    <h3 id="fråga"> Var vill du ha växten? </h3>
+    <div id="svar">
+        <button onclick="väljPlats('inomhus')">Inomhus</button>
+        <button onclick="väljPlats('utomhus')">Utomhus</button>
     </div>
+</div>
 
-    <button id="nästaFråga">Nästa</button>
-    <div id="resultat" class="gömd"></div>
-  </div>
+<div id="resultat" class="gömd"></div>
+
+</div>
 
   <script src="quiz.js"></script>
 </body>
