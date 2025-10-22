@@ -3,99 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <title>Balkong</title>
 
-  <!-- === LÄNKN TILL CSS === -->
-  <link rel="stylesheet" href="style.css">
-
-   <!-- === GOOGLEFONTS === -->
+  <!-- Typsnitt från Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 
-  <title>Balkong</title>
+  <!-- CSS-filer -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="undersidor.css">
 </head> 
 
 <body>
-  <!-- === HEADERLÄNK === -->
-   <header>
-      <div id="header-placeholder"></div>
-   </header>
 
-  
-  <!-- === Hero-sektion === -->
- 
 
-<!--INNEHÅLL-->
+  <!-- Intro-sektion -->
+  <section class="introb">
+    Balkong
+  </section>
+
   <main id="content">
-    <section class="intro">
-      <h1>Balkong</h1>
-      <h2>Vilka växter passar bäst in på balkongen? Här kan du lära dig mer!
-      </h2>
+    <!-- Hero-sektion: Välj balkongläge -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Vilket läge beskriver din balkong bäst?</h2>
+        <div class="button-container">
+          <a href="soderlage.html" class="balcony-btn">Söderläge</a>
+          <a href="vasterlage.html" class="balcony-btn">Västerläge</a>
+          <a href="osterlage.html" class="balcony-btn">Österläge</a>
+          <a href="norrlage.html" class="balcony-btn">Norrläge</a>
+        </div>
+      </div>
     </section>
 
+    <!-- Introduktion till växter -->
+    <header class="page-header">
+      <h3>Vilka växter passar bäst på balkongen?</h3>
+      <p>Här kan du lära dig mer!</p>
+    </header>
+
+    <!-- Växtkort / artiklar -->
     <section class="content">
-      <article>
+
+      <article class="plant-card">
         <a href="atbart.html" class="card-link">
-          <img src="lifestyle-person-decorating-their-front-door.jpg" class="article-img">
-          <h3>Odla ätbart</h3>
-          <p>Går det att odla ätbart på balkongen??</p>
+          <img src="pixx/lifestyle-person-decorating-their-front-door.jpg" class="article-img" alt="Odla ätbart">
+          <h2>Odla ätbart</h2>
+          <p>Går det att odla ätbart på balkongen?</p>
         </a>
       </article>
 
-      <article>
+      <article class="plant-card">
         <a href="atbart.html" class="card-link">
-          <img src="2147768546.jpg" class="article-img">
-          <h3>Årstidsanpassat</h3>
+          <img src="pixx/2147768546.jpg" class="article-img" alt="Årstidsanpassat">
+          <h2>Årstidsanpassat</h2>
           <p>Vad man kan hitta på under pågående årstid</p>
         </a>
       </article>
 
-      <article>
+      <article class="plant-card">
         <a href="atbart.html" class="card-link">
-          <img src="2149854831.jpg" class="article-img">
-          <h3>Skadedjur</h3>
-          <p>Här ska text in som handlar om skadedjur och ohyra på balkongen.</p> 
+          <img src="pixx/2149854831.jpg" class="article-img" alt="Skadedjur">
+          <h2>Skadedjur</h2>
+          <p>Här står information om skadedjur och ohyra på balkongen.</p> 
         </a>
       </article>
 
-      <article>
+      <article class="plant-card">
         <a href="atbart.html" class="card-link">
-          <img src="Skärmavbild 2025-10-19 kl. 22.00.20.png" class="article-img">
-          <h3>Effektivisera ytan</h3>
-          <p>Utnyttja din yta på bästa sätt!!</p> 
+          <img src="pixx/2147768546.jpg" class="article-img" alt="Effektivisera ytan">
+          <h2>Effektivisera ytan</h2>
+          <p>Utnyttja din yta på bästa sätt!</p> 
         </a>
       </article>
 
-      <article>
+      <article class="plant-card">
         <a href="atbart.html" class="card-link">
-          <img src="Skärmavbild 2025-10-19 kl. 21.56.24.png" class="article-img">
-          <h3>Ljusinsläpp</h3>
-          <p>Här står de lite om ljus och så.</p> 
+          <img src="pixx/Skärmavbild 2025-10-19 kl. 21.56.24.png" class="article-img" alt="Ljusinsläpp">
+          <h2>Ljusinsläpp</h2>
+          <p>Här står lite om ljus och solens påverkan på växterna.</p> 
         </a>
       </article>
 
-      <article>
+      <article class="plant-card">
         <a href="atbart.html" class="card-link">
-          <img src="Skärmavbild 2025-10-19 kl. 21.57.08.png" class="article-img">
-          <h3>Jordtyper</h3>
-          <p>Sånt man planterar i</p> 
+          <img src="pixx/Skärmavbild 2025-10-19 kl. 21.57.08.png" class="article-img" alt="Jordtyper">
+          <h2>Jordtyper</h2>
+          <p>Information om olika jordtyper att plantera i</p> 
         </a>
       </article>
+
     </section>
   </main>
-
-  
-    <div id="footer-placeholder"></div>
-    <script>
-      fetch('footerm.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
-    </script>
-  
-
-   <!-- === JAVASCRIPT === -->
-    <script src="headerm.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <!-- === LÄNKN TILL CSS === -->
+  <link rel="stylesheet" href="style.css">
+
+   <!-- === GOOGLEFONTS === -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Om oss</title>
+</head> 
+
+<body>
+    <!-- === HEADERLÄNK === -->
+   
+  
+     <section class="introoss">
+        Om oss
+     </section>
+  <main>
+    <!-- Bakgrund / Syfte -->
+    <section class="intro">
+        <h2>Vilka är vi?</h2>
+        <p>Ett gäng studenter som fixar en webbsida där man kan lära sig mer om att odla hållbart, prisvärt och på olika sätt & ställen.
+          Både inomhus och utomhus, på större och mindre ytor.
+        </p>
+      </section>
+    <section class="intro">
+      <h2>Bakgrund & Syfte</h2>
+      <p>Vi vill hjälpa andra, oavsett kunskap och tidigare erfarenheter.
+      </p>
+    </section>
+
+    <!-- Vanliga frågor -->
+    <section class="intro">
+      <h2>Vanliga frågor</h2>
+
+      <div class="faq-item">
+        <button class="faq-question">Hur kontaktar jag er?</button>
+        <div class="faq-answer">
+          <p>Du kan använda kontaktformuläret nedan eller mejla oss direkt på info@exempel.se.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Hur snabbt får jag svar?</button>
+        <div class="faq-answer">
+          <p>Vi försöker svara inom 1–2 arbetsdagar.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Var finns ni?</button>
+        <div class="faq-answer">
+          <p>Vi är bosatta på olika platser i Sverige.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontaktformulär -->
+    <section class="contact">
+      <h2>Kontakta oss</h2>
+      <form>
+        <label for="name">Namn</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-post</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Meddelande</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Skicka</button>
+      </form>
+    </section>
+  </main>
+
+  
+
+  <script>
+    // FAQ interaktiv funktion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        button.classList.toggle('active');
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+
+</body>
+</html>
