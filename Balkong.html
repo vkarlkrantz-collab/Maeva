@@ -1,66 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Balkong</title>
+  
 
+  <!-- === LÄNKN TILL CSS === -->
   <link rel="stylesheet" href="style.css">
 
+   <!-- === GOOGLEFONTS === -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-</head>
+
+  <title>Balkong</title>
+</head> 
+
 <body>
-  <header>
-    <h1>Maeva Garden (här ska ju header in sen tänker jag) </h1>
-    <nav>
-      <ul>
-        <li><a href="#">Hem</a></li>
-        <li><a href="#">Sida 1</a></li>
-        <li><a href="#">Sida 2</a></li>
-        <li><a href="#">Sida 3</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- === HEADERLÄNK === -->
+   <header>
+      <div id="header-placeholder"></div>
+   </header>
 
   
-
   <!-- === Hero-sektion === -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Vilka växter passar här?</h2>
-      <p><i>Viktors lista ska in här typ.</i></p>
-      <a href="#content" class="hero-btn">En knapp</a>
-    </div>
-  </section>
+ 
 
+<!--INNEHÅLL-->
   <main id="content">
     <section class="intro">
-      <h2>Balkong</h2>
-      <p>Vilka växter passar bäst in på balkongen? Här kan du lära dig mer!</p>
+      <h1>Balkong</h1>
+      <h2>Vilka växter passar bäst in på balkongen? Här kan du lära dig mer!
+      </h2>
     </section>
 
     <section class="content">
       <article>
-        <h3>Odla ätbart</h3>
-        <p>Går det att odla ätbart på balkongen??</p>
+        <a href="atbart.html" class="card-link">
+          <img src="lifestyle-person-decorating-their-front-door.jpg" class="article-img">
+          <h3>Odla ätbart</h3>
+          <p>Går det att odla ätbart på balkongen??</p>
+        </a>
       </article>
 
       <article>
-        <h3>Årstidsanpassat</h3>
-        <p>Vad man kan hitta på under pågående årstid</p>
+        <a href="atbart.html" class="card-link">
+          <img src="2147768546.jpg" class="article-img">
+          <h3>Årstidsanpassat</h3>
+          <p>Vad man kan hitta på under pågående årstid</p>
+        </a>
       </article>
 
       <article>
-        <h3>Skadedjur/ohyra</h3>
-        <p>Här ska text in som handlar om skadedjur och ohyra på balkongen.</p>
+        <a href="atbart.html" class="card-link">
+          <img src="2149854831.jpg" class="article-img">
+          <h3>Skadedjur</h3>
+          <p>Här ska text in som handlar om skadedjur och ohyra på balkongen.</p> 
+        </a>
+      </article>
+
+      <article>
+        <a href="atbart.html" class="card-link">
+          <img src="Skärmavbild 2025-10-19 kl. 22.00.20.png" class="article-img">
+          <h3>Effektivisera ytan</h3>
+          <p>Utnyttja din yta på bästa sätt!!</p> 
+        </a>
+      </article>
+
+      <article>
+        <a href="atbart.html" class="card-link">
+          <img src="Skärmavbild 2025-10-19 kl. 21.56.24.png" class="article-img">
+          <h3>Ljusinsläpp</h3>
+          <p>Här står de lite om ljus och så.</p> 
+        </a>
+      </article>
+
+      <article>
+        <a href="atbart.html" class="card-link">
+          <img src="Skärmavbild 2025-10-19 kl. 21.57.08.png" class="article-img">
+          <h3>Jordtyper</h3>
+          <p>Sånt man planterar i</p> 
+        </a>
       </article>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Mitt Namn. Alla rättigheter förbehållna.</p>
-  </footer>
+  
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch('footerm.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+  
 
+   <!-- === JAVASCRIPT === -->
+    <script src="headerm.js"></script>
+
+</body>
 </html>
