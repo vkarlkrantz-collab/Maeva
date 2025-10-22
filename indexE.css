@@ -112,6 +112,29 @@ button {
 }
 
 
+/* quiz i kolumn 2*/
+.QuizBild { 
+  position: relative;
+  width: 80%;
+  height: 250px;
+  margin: 10px auto;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 8px double #81a969;
+}
+
+.QuizBild img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  transition: opacity 0.6s ease;
+}
+
+
+
+
 /* mitten kolumnen*/
 .mitten {
   background-color: #fcc0c5;

@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const plantaData = [
         { name: "Hortensia", type:"Inomhus & utomhus växt ", care:"Medelsvår" }, 
-        { name: "Monstera deliciosa", type:"Inomhus växt", care:"Medelsvår" }, 
+        { name: "Monstera deliciosa", type:"Inomhus växt", care:"Lättskött" }, 
         { name: "Rosor", type:"Utomhus växt", care:"Svårskött" }, 
-        { name: "Tomater", type:"Utomhus växt", care:"Medelsvår" }, 
-        { name: "Elefantöra", type:"Inomhus växt", care:"Medelsvår" }, 
+        { name: "Tomater", type:"Utomhus växt", care:"Lättskött" }, 
+        { name: "Elefantöra", type:"Inomhus växt", care:"Lättskött" }, 
         { name: "Basilika", type:"Inomhus & utomhus växt ", care:"Lättskött" }, 
-        { name: "Ljung", type:"Utomhus växt", care:"Medelsvår" }, 
+        { name: "Ljung", type:"Utomhus växt", care:"Lättskött" }, 
         { name: "Pioner", type:"Utomhus växt", care:"Medelsvår" }
 ];
 

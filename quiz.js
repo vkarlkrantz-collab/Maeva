@@ -80,19 +80,19 @@ function visaResultat() {
   if (plats === "inomhus") {
     if (svår === "lättskött" && sol === "lite") {
       växt = "Elefantöra";
-      bild = "växt1.jpg";
+      bild = "Växt5.jpg";
     } else if (svår === "lättskött" && sol === "mycket") {
       växt = "Monstera";
-      bild = "växt2.jpg";
+      bild = "Växt2.jpg";
     } else if (svår === "medelsvår" && sol === "mellan") {
       växt = "Hortensia";
-      bild = "växt3.jpg";
+      bild = "Växt1.jpg";
     } else if (svår === "svårskött" && sol === "mycket") {
-      växt = "Orkidé";
-      bild = "växt4.jpg";
+      växt = "Hibiskus";
+      bild = "Växt9.jpg";
     } else {
       växt = "Fredskalla";
-      bild = "växt5.jpg";
+      bild = "Växt10.jpg";
     }
   }
 
@@ -100,19 +100,22 @@ function visaResultat() {
   else if (plats === "utomhus") {
     if (odla === "ätbart" && svår === "lättskött") {
       växt = "Tomater";
-      bild = "växt6.jpg";
+      bild = "Växt11.jpg";
     } else if (odla === "ätbart" && svår === "medelsvår") {
-      växt = "Paprika";
-      bild = "växt7.jpg";
+      växt = "Citronträd";
+      bild = "Växt12.jpg";
+    } else if (odla === "ätbart" && svår === "svårskött") {
+      växt = "Vattenmelon";
+      bild = "Växt13.jpg";
     } else if (odla === "vanliga" && svår === "lättskött") {
       växt = "Ljung";
-      bild = "växt8.jpg";
+      bild = "Växt7.jpg";
     } else if (odla === "vanliga" && svår === "svårskött") {
       växt = "Rosor";
-      bild = "växt9.jpg";
+      bild = "Växt3.jpg";
     } else {
-      växt = "Lavendel";
-      bild = "växt10.jpg";
+      växt = "Magnolia";
+      bild = "Växt14.jpg";
     }
   }
 
@@ -121,7 +124,7 @@ function visaResultat() {
     <div class="resultat-box">
       <img src="${bild}" alt="${växt}" class="resultatBild">
 
-      <h3> En ${växt} passar dig perfekt</h3>
+      <h3> ${växt} passar dig perfekt</h3>
       <button onclick="window.location.reload()">Börja om</button>
     </div>
   `;
