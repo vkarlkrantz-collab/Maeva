@@ -84,3 +84,10 @@
 .close-btn:hover {
   color: #333;
 }
+
+.plant-card:hover {
+ transform: scale(1.10);                /* Förstorar kortet */
+  z-index: 10;                          /* Ligger över andra */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Starkare skugga */
+}
+

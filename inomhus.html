@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maeva hemsida</title>
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <!-- CSS -->
-  <link rel="stylesheet" href="Styleviktor.css">
+  <link rel="stylesheet" href="Styleviktor.css" />
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <div id="header-placeholder"></div>
   </header>
 
-  <img src="blomkrukorV.png" alt="startsida hero" class="herostart">
+  <img src="blomkrukorV.png" alt="startsida hero" class="herostart" />
 
   <script>
     fetch('header.html')
@@ -30,34 +30,44 @@
       });
   </script>
 
-
-
-  <main id="content">
+  <main id="content" class="content-with-footer-spacing">
     <section class="intro">
       <h3>Inomhus</h3>
-      <p>Vilka växter passar bäst in inomhus? Här kan du lära dig mer!</p>
+      <h2>Inspiration för din inomhusmiljö</h2>
     </section>
 
-    <section class="content">
-      <article id="random-plant-container"></article>
-      <article>
-        <a href="inomhusvaxter.html" class="card-link">
-          <img src="chiliV.png" alt="Ljusinsläpp växter" class="article-img">
-          <h3>Inomhusväxter</h3>
-          <p>Här kan du se vilka växter som passar bra att odla inomhus</p>
-        </a>
-      </article>
+    <!-- Wrapper runt content-sektionen för skalning och centrering -->
+    <div class="content-wrapper">
+      <section class="content">
+        <div id="random-plant-container"></div>
+
+        <article>
+          <a href="inomhusvaxter.html" class="card-link">
+            <img src="inomhusvaxter.png" alt="Ljusinsläpp växter" class="article-img" />
+            <h3>Inomhusväxter</h3>
+            <p></p>
+          </a>
+        </article>
+
+        <article>
+          <a href="#" class="card-link">
+            <img src="ljusinslappV.png" alt="Ljusinsläpp växter" class="article-img" />
+            <h3>Ljusinsläpp</h3>
+            <p></p>
+          </a>
+        </article>
+
+        <article>
+          <a href="artiklarV.html" class="card-link">
+            <img src="artiklarV.png" alt="Ljusinsläpp växter" class="article-img" />
+            <h3>Artiklar</h3>
+            <p></p>
+          </a>
+        </article>
 
      
-
-      <article>
-        <a href="artiklarV.html" class="card-link">
-          <img src="tomatV.png" alt="Ljusinsläpp växter" class="article-img">
-          <h3>Artiklar</h3>
-          <p>Inspiration för en grön inomhusmiljö.</p>
-        </a>
-      </article>
-    </section>
+  </section>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -65,20 +75,20 @@
   <script>
     fetch('footer.html')
       .then(response => response.text())
-      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+      .then(data => (document.getElementById('footer-placeholder').innerHTML = data));
   </script>
 
   <!-- Modal -->
-<div id="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <div id="modal-plant-content">
-      <!-- Innehåll från extern fil laddas här -->
+  <div id="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-plant-content">
+        <!-- Innehåll från extern fil laddas här -->
+      </div>
     </div>
   </div>
-</div>
-<link rel="stylesheet" href="dagensvaxt.css" />
-<script src="dagensvaxtV.js"></script>
 
+  <link rel="stylesheet" href="dagensvaxt.css" />
+  <script src="dagensvaxtV.js"></script>
 </body>
 </html>

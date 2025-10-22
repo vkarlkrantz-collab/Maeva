@@ -25,14 +25,14 @@ const plantCards = [
   },
 
  {
-  href: "ovrigavaxterV.html",
+  href: "oreganoV.html",
   img: "växtkort (5).png",
   title: "Oregano",
   description: ""
 },
 
 {
-  href: "ovrigavaxterV.html",
+  href: "pelargonV.html",
   img: "växtkort (6).png",
   title: "Pelargon",
   description: ""
