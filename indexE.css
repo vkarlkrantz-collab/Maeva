@@ -204,6 +204,66 @@ letter-spacing: 0.8px;
 
 /* tips*/
 
+.huvud-tips { 
+  background-color: #bfecac;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.126);
+  margin-bottom: 50px;
+  width: 100%;
+  height: 400px;
+}
+
+.huvud-tips h1 {
+  color: #81a969;
+  font-size: 120px;
+  margin-bottom: 15px;
+}
+
+.huvud-tips p {
+  color: #000000;
+  font-size: 18px;         
+  line-height: 1.8;        
+  text-align: center;       
+  max-width: 1000px;         
+  margin: 0 auto;           
+  font-weight: 300;        
+  letter-spacing: 0.8px; 
+}
+
+.tips { 
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 40px; 
+  background-color: #8a6851;
+  padding: 40px;
+  margin-left:20%;
+  box-sizing: border-box;
+  justify-items: center; 
+  border-radius: 5px;
+}
+
+.tipsRuta {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  height: 250px;
+  width: 100%;
+  max-width: 250px; 
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.126);
+  transition: all 0.3s ease;
+}
+
+.tipsRuta h2 {
+  font-size: 20px;
+}
+
+.tipsRuta p {
+  font-size: 12px;
+}
+
+
 
 /* Header */
 .header { 
@@ -292,7 +352,15 @@ letter-spacing: 0.8px;
 
 
 /* responsivitet */ 
-@media (max-width:800px) {
+
+@media (max-width:1500px) {
+.tips { 
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 30px; 
+}
+}
+
+@media (max-width:970px) {
 
 .hamburger {
    display: block;
@@ -367,6 +435,12 @@ font-size: 30px;
 .mitten h1 {
 font-size: 100px;
 }
+.huvud-tips h1 {
+  font-size: 100px;
+}
+.huvud-tips p {
+  margin: 5%;
+}
 
 .toppen {
   gap: 20px;
@@ -378,6 +452,15 @@ font-size: 100px;
 
 .snabblänk {
   width: 25%;
+}
+
+.tips { 
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 30px; 
+}
+
+.tipsRuta {
+  height: 200px;
 }
 
 }
