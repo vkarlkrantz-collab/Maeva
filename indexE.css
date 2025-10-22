@@ -215,7 +215,6 @@ letter-spacing: 0.8px;
 }
 
 .huvud-tips h1 {
-  color: #81a969;
   font-size: 120px;
   margin-bottom: 15px;
 }
@@ -236,7 +235,7 @@ letter-spacing: 0.8px;
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   grid-gap: 40px; 
-  background-color: #8a6851;
+  background-color: #80a9698e;
   padding: 40px;
   margin-left:20%;
   box-sizing: border-box;
@@ -263,7 +262,22 @@ letter-spacing: 0.8px;
   font-size: 12px;
 }
 
+.mittenTips {
+  width: 80%;
+  background-color: #80a9698e;
+  padding: 40px;
+  margin-left:10%;
+  margin-top: 10%;
+  box-sizing: border-box;
+  justify-items: center; 
+  border-radius: 5px;
+}
 
+.h3Tips {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 70px;
+}
 
 /* Header */
 .header { 
