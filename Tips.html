@@ -10,14 +10,17 @@
 <body>
 <div id="header-placeholder"></div>
 
+<img src="tips.hero3.jpg" alt="startsida hero" class="herostart"> 
+
     <Section class="huvud-tips">
       <h1>Tips </h1>
       <p> Upptäck tips och råd om krukväxter, trädgård och odling året runt. Klicka dig in på en kategori för att läsa vidare, hitta DIY-projekt och få svar på vanliga frågor. Här hittar du svaren på allt du behöver veta!</p>
     </Section>
 
 
-<h3 class="h3Tips"> Tips & råd </h3>
 
+
+<!-- tips rutor -->
 <Section class="tips">
   <div class="tipsRuta"> 
     <h2> Dagens växt / populära växter </h2>
@@ -78,14 +81,64 @@
     <h2> Dagens växt / populära växter </h2>
     <p> Här kommer det att finnas en bild? kanske en interaktiv knapp för att hitta mer växter? kanske populära växter</p>
   </div>
+
 </Section>
 
+
+
+<!-- vanliga frågor och svar -->
 <Section class="mittenTips">
   <h1>Vanliga frågor och svar</h1>
+
+<!-- rutor - innehåll -->
+<section class="FAQ">
+<div class="FAQ-innehåll" onclick="openAnswer('answer1')">
+  <h3>Hur ofta ska jag vattna mina krukväxter?</h3>
+</div>
+
+<div class="FAQ-innehåll" onclick="openAnswer('answer2')">
+  <h3>Vilken jord är bäst för inomhusodling?</h3>
+</div>
+
+<div class="FAQ-innehåll" onclick="openAnswer('answer3')">
+  <h3>Hur får jag min orkidé att blomma igen?</h3>
+</div>
+</section>
+<!--popup fönster med svar -->
+
+<div id="answer1" class="FAQ-popup">
+  <div class="FAQ-popup-innehåll">
+    <span class="close" onclick="closeAnswer('answer1')">&times;</span>
+    <h2>Hur ofta ska jag vattna mina krukväxter?</h2>
+    <p>Det beror på växttyp och årstid. Känn efter i jorden – är den torr 2–3 cm ner är det dags att vattna. Under vintern behöver växterna ofta mindre vatten.</p>
+</div>
+</div>
+
+<div id="answer2" class="FAQ-popup">
+  <div class="FAQ-popup-innehåll">
+    <span class="close" onclick="closeAnswer('answer2')">&times;</span>
+    <h2>Vilken jord är bäst för inomhusodling?</h2>
+    <p>Använd gärna blomjord av god kvalitet. För kaktusar, orkidéer eller medelhavsväxter finns specialjordar som ger rätt dränering och näring.</p>
+</div>
+</div>
+
+<div id="answer3" class="FAQ-popup">
+  <div class="FAQ-popup-innehåll">
+    <span class="close" onclick="closeAnswer('answer3')">&times;</span>
+    <h2>Hur får jag min orkidé att blomma igen?</h2>
+    <p>Placera den ljust men inte i direkt sol, och låt den vila efter blomning. Klipp bort vissna stänglar och vattna sparsamt tills nya knoppar bildas.</p>
+</div>
+</div>
+
+
 </Section>
 
-<h3 class="h3Tips"> Inspiration & gör-det-själv </h3>
 
+
+
+
+
+<h3 class="h3Tips"> Inspiration & gör-det-själv </h3>
 
 <Section class="tips">
   <div class="tipsRuta"> 
@@ -150,6 +203,7 @@
 </Section>
 
 <script src="header.js"></script> 
+<script src="tips.js"></script> 
 </body>
 
 </html>

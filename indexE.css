@@ -205,12 +205,9 @@ letter-spacing: 0.8px;
 /* tips*/
 
 .huvud-tips { 
-  background-color: #bfecac;
   align-items: center;
-  padding: 20px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.126);
-  margin-bottom: 50px;
-  width: 100%;
+  width: 80%;
+  margin-left: 10% ;
   height: 400px;
 }
 
@@ -264,19 +261,103 @@ letter-spacing: 0.8px;
 
 .mittenTips {
   width: 80%;
-  background-color: #80a9698e;
   padding: 40px;
   margin-left:10%;
   margin-top: 10%;
   box-sizing: border-box;
   justify-items: center; 
   border-radius: 5px;
+  background-image: url('blommor.mitten.tips.jpg');
+}
+
+.mittenTips h1 {
+  background-color: #ffffff83;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .h3Tips {
   font-size: 50px;
   text-align: center;
   padding-top: 70px;
+}
+
+.FAQ {
+  width: 70%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0 10px rgba(0,0,0,0.1);
+}
+
+.FAQ-innehåll { 
+  background-color: #ffffff83;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.FAQ-innehåll:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.FAQ-innehåll h3 { 
+  font-size: 20px;
+  margin: 0;
+}
+
+.FAQ-popup {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.FAQ-popup-innehåll { 
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 100px;
+  border-radius: 15px;
+  width: 60%;
+  max-width: 700px;
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: popupFadeIn 0.4s ease;
+}
+
+.FAQ-popup-innehåll p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 40px;
+  color: #81a969;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #dc6874;
+}
+
+@keyframes popupFadeIn {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
 }
 
 /* Header */
