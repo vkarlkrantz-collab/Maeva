@@ -109,7 +109,9 @@ button {
   font-family: 'Times New Roman', Times, serif;
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.126);
   margin: 10px;
+  cursor: pointer;
 }
+
 
 
 /* quiz i kolumn 2*/
@@ -214,10 +216,11 @@ letter-spacing: 0.8px;
 .huvud-tips h1 {
   font-size: 120px;
   margin-bottom: 15px;
+  color: #81a969;
 }
 
 .huvud-tips p {
-  color: #000000;
+  color: #8a6851;
   font-size: 18px;         
   line-height: 1.8;        
   text-align: center;       
@@ -228,13 +231,13 @@ letter-spacing: 0.8px;
 }
 
 .tips { 
-  width: 60%;
+  width: 70%;
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
   grid-gap: 40px; 
-  background-color: #80a9698e;
+  background-color: #ebded4;
   padding: 40px;
-  margin-left:20%;
+  margin-left:15%;
   box-sizing: border-box;
   justify-items: center; 
   border-radius: 5px;
@@ -244,21 +247,61 @@ letter-spacing: 0.8px;
   background-color: #fff;
   text-align: center;
   border-radius: 5px;
-  height: 250px;
+  height: 300px;
   width: 100%;
-  max-width: 250px; 
+  max-width: 300px; 
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.126);
   transition: all 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.tipsBild { 
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.tipsBild img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
 
 .tipsRuta h2 {
   font-size: 20px;
+  color: #81a969;
+  font-family: "Tangerine", cursive;
 }
 
 .tipsRuta p {
   font-size: 12px;
+  color: #8a6851;
 }
 
+.tipsKnapp {
+  background-color: #fcc0c5;
+  color: #dc6874;
+  padding: 6px 14px;       
+  border-radius: 6px;      
+  font-size: 14px;         
+  font-weight: 600;  
+  width: 100px;     
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tipsKnapp:hover {
+  background-color: #dc6874;
+  color: #fff;
+  transform: scale(1.05);  
+}
+
+/* Frågor och svar */
 .mittenTips {
   width: 80%;
   padding: 40px;
@@ -267,12 +310,13 @@ letter-spacing: 0.8px;
   box-sizing: border-box;
   justify-items: center; 
   border-radius: 5px;
-  background-image: url('blommor.mitten.tips.jpg');
+  background-image: url('tips.hero2.jpg');
 }
 
 .mittenTips h1 {
-  background-color: #ffffff83;
   padding: 10px;
+  color: #fff;
+  text-shadow:0px 0 10px rgba(0, 0, 0, 0.509) ;
   border-radius: 10px;
 }
 
@@ -280,7 +324,9 @@ letter-spacing: 0.8px;
   font-size: 50px;
   text-align: center;
   padding-top: 70px;
+  color: #8a6851;
 }
+
 
 .FAQ {
   width: 70%;
@@ -290,15 +336,13 @@ letter-spacing: 0.8px;
   gap: 30px;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0px 0 10px rgba(0,0,0,0.1);
 }
 
 .FAQ-innehåll { 
-  background-color: #ffffff83;
+  background-color: #ffffff9e;
   border-radius: 10px;
   text-align: center;
   padding: 20px;
-  box-shadow: 0px 0 8px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -345,9 +389,9 @@ letter-spacing: 0.8px;
   position: absolute;
   right: 30px;
   top: 20px;
-  font-size: 40px;
-  color: #81a969;
+  font-size: 60px;
   cursor: pointer;
+  color: #fff;
   transition: color 0.3s ease;
 }
 
@@ -359,6 +403,9 @@ letter-spacing: 0.8px;
   from {opacity: 0; transform: translateY(-30px);}
   to {opacity: 1; transform: translateY(0);}
 }
+
+/* perenner */
+
 
 /* Header */
 .header { 
@@ -443,7 +490,9 @@ letter-spacing: 0.8px;
   left: 20px;
   display: none;
   box-shadow: none;
+  background-color: none;
 }
+
 
 
 /* responsivitet */ 
@@ -555,7 +604,18 @@ font-size: 100px;
 }
 
 .tipsRuta {
-  height: 200px;
+  height: 250px;
+}
+
+.tipsRuta h2 {
+  font-size: 17px;
+  color: #81a969;
+  font-family: "Tangerine", cursive;
+}
+
+.tipsRuta p {
+  font-size: 10px;
+  color: #8a6851;
 }
 
 }
