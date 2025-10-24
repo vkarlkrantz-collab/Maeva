@@ -17,6 +17,8 @@
 <body class="undersida-grid">
 
   <!-- Huvudinnehåll -->
+
+  <div id="header-placeholder"></div>
   <main>
     <!-- Sidrubrik -->
     <header class="page-header">
@@ -55,5 +57,14 @@
   </main>
 
 
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => (document.getElementById('footer-placeholder').innerHTML = data));
+  </script>
+
+<script src="header.js"></script>
 </body>
 </html>

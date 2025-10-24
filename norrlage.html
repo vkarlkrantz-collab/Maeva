@@ -19,6 +19,8 @@
 
   <!-- Huvudinnehåll -->
   <main>
+    <div id="header-placeholder"></div>
+
     <!-- Sidrubrik -->
     <header class="page-header">
       <h1>Norrläge</h1>
@@ -56,5 +58,15 @@
     </section>
   </main>
 
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => (document.getElementById('footer-placeholder').innerHTML = data));
+  </script>
+
+<script src="header.js"></script>
 </body>
 </html>
