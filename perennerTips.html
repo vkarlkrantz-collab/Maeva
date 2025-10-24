@@ -18,15 +18,209 @@
   <div id="header-placeholder"></div>
   
   <a href="Tips.html"> 
-    <button class="tillbakaKnapp">Gå tillbaka</button>
+    <button class="tillbakaKnapp2">Gå tillbaka</button>
 </a>
 
-<h1> Perenner året runt</h1>
+<h1 class="PH1"> Perenner året runt</h1>
+<h4> Perenner lever året runt och ger trädgården liv i varje säsong.
+  De kommer tillbaka år efter år, kräver lite skötsel och finns i oändligt många färger och former.
+  Plantera dem en gång – och njut av en trädgård som blommar, växer och förändras hela året.</h4>
 
-<p> Här kan du få alla tips om perenner du kan behöva</p>
+<Section>
+  <!-- rutor - innehåll -->
+  <section class="FAQ">
+  <div class="FAQ-innehåll" onclick="openAnswer('answer1')">
+    <h3>Vad är perenner?</h3>
+  </div>
+  
+  <div class="FAQ-innehåll" onclick="openAnswer('answer2')">
+    <h3>Varför ska jag välja perenner?</h3>
+  </div>
+  
+  <div class="FAQ-innehåll" onclick="openAnswer('answer3')">
+    <h3>Hur tar jag hand om perenner?</h3>
+  </div>
+
+  <div class="FAQ-innehåll" onclick="openAnswer('answer4')">
+    <h3>Lever året runt</h3>
+  </div>
+  </section>
+  <!--popup fönster med svar -->
+  
+  <div id="answer1" class="FAQ-popup">
+    <div class="FAQ-popup-innehåll">
+      <span class="close" onclick="closeAnswer('answer1')">&times;</span>
+      <h2>Vad är perenner?</h2>
+      <p>Perenner är växter som kommer tillbaka år efter år – riktiga trotjänare i trädgården!
+        De vissnar ner på hösten, men under jorden vilar rötterna och laddar inför nästa säsong.
+        När våren kommer spirar de igen med ny kraft. Det finns perenner i alla färger, former och storlekar – från små marktäckare till höga blommande skönheter.</p>
+  </div>
+  </div>
+  
+  <div id="answer2" class="FAQ-popup">
+    <div class="FAQ-popup-innehåll">
+      <span class="close" onclick="closeAnswer('answer2')">&times;</span>
+      <h2>Varför ska jag ha perenner?</h2>
+      <p>För att de gör livet (och trädgården) enklare och vackrare! 
+        Perenner kräver mindre skötsel än många andra växter, och de fyller trädgården med liv år efter år utan att du behöver plantera om.
+        De lockar dessutom till sig fjärilar, humlor och bin – och vem vill inte ha lite extra surr i sommarkvällen? </p>
+  </div>
+  </div>
+  
+  <div id="answer3" class="FAQ-popup">
+    <div class="FAQ-popup-innehåll">
+      <span class="close" onclick="closeAnswer('answer3')">&times;</span>
+      <h2>Hur tar jag hand om perenner?</h2>
+      <p>Perenner är ganska självständiga, men lite kärlek uppskattas!
+        Plantera dem i bra jord, vattna ordentligt första tiden och ge dem utrymme att växa.
+        Klipp bort vissna blad på våren och dela äldre plantor ibland så håller de sig pigga.
+        Annars? Luta dig tillbaka och låt naturen göra jobbet – perennerna fixar resten. </p>
+  </div>
+  </div>
+
+  <div id="answer4" class="FAQ-popup">
+    <div class="FAQ-popup-innehåll">
+      <span class="close" onclick="closeAnswer('answer4')">&times;</span>
+      <h2>Lever året runt</h2>
+      <p>Perenner vilar aldrig riktigt. De följer årstidernas rytm – spirar på våren, blommar stolt på sommaren, glöder på hösten och vilar stilla under vintern.
+        Genom att välja olika sorter får du en trädgård som alltid förändras men aldrig står still.
+        När vissa växter vissnar, tar andra över – och även under snön finns liv som väntar på att vakna.
+        Med perenner får du en trädgård som lever, andas och överraskar, år efter år.</p>
+  </div>
+  </div>
+</Section>
+
+<h3 class="h3Tips"> Hitta rätt perenn för dig</h3>
+
+
+<section class="filter-buttons">
+  <button onclick="filterPlants('alla')">Alla</button>
+  <button onclick="filterPlants('vår')">Vår</button>
+  <button onclick="filterPlants('sommar')">Sommar</button>
+  <button onclick="filterPlants('höst')">Höst</button>
+</section>
+
+<section class="gallery">
+
+  <!-- vår -->
+  <div class="plant vår">
+    <img src="Växt16.jpg" alt="Julros">
+    <div class="info">
+      <h3>Julros</h3>
+      <p><strong>Blomning:</strong> December–mars<br>
+      <strong>Läge:</strong> Halvskugga<br>
+      <strong>Höjd:</strong> 30–40 cm</p>
+    </div>
+  </div>
+
+  <div class="plant vår">
+    <img src="Växt17.jpg" alt="Vårlök">
+    <div class="info">
+      <h3>Vårlök</h3>
+      <p><strong>Blomning:</strong> Februari-mars<br>
+      <strong>Läge:</strong> Sol–halvskugga<br>
+      <strong>Höjd:</strong> 10–20 cm</p>
+    </div>
+  </div>
+
+  <div class="plant vår">
+    <img src="Växt18.jpg" alt="Vårkrage">
+    <div class="info">
+      <h3>Vårkrage</h3>
+      <p><strong>Blomning:</strong> April–maj<br>
+      <strong>Läge:</strong> Sol<br>
+      <strong>Höjd:</strong> 50-70 cm</p>
+    </div>
+  </div>
+
+  <!-- sommar -->
+  <div class="plant sommar">
+    <img src="Växt19.jpg" alt="Lavendel">
+    <div class="info">
+      <h3>Lavendel</h3>
+      <p><strong>Blomning:</strong> Juni–augusti<br>
+      <strong>Läge:</strong> Sol<br>
+      <strong>Höjd:</strong> 30-40 cm</p>
+    </div>
+  </div>
+
+  <div class="plant sommar">
+    <img src="Växt8.jpg" alt="Pion">
+    <div class="info">
+      <h3>Pion</h3>
+      <p><strong>Blomning:</strong> Juni-juli<br>
+      <strong>Läge:</strong> Sol–halvskugga<br>
+      <strong>Höjd:</strong> 70-90 cm</p>
+    </div>
+  </div>
+
+  <div class="plant sommar">
+    <img src="Växt20.jpg" alt="Daglilja">
+    <div class="info">
+      <h3>Daglilja</h3>
+      <p><strong>Blomning:</strong> Juni–augusti<br>
+      <strong>Läge:</strong> Sol–halvskugga<br>
+      <strong>Höjd:</strong> 50-90 cm</p>
+    </div>
+  </div>
+
+  <div class="plant sommar">
+    <img src="hero1.png" alt="Solhatt">
+    <div class="info">
+      <h3>Solhatt</h3>
+      <p><strong>Blomning:</strong> Juli–september<br>
+      <strong>Läge:</strong> Sol<br>
+      <strong>Höjd:</strong> 60–100 cm</p>
+    </div>
+  </div>
+
+  <!-- höst -->
+  <div class="plant höst">
+    <img src="Växt21.jpg" alt="Rudbeckia">
+    <div class="info">
+      <h3>Rudbeckia</h3>
+      <p><strong>Blomning:</strong> Augusti–oktober<br>
+      <strong>Läge:</strong> Sol<br>
+      <strong>Höjd:</strong> 60–100 cm</p>
+    </div>
+  </div>
+
+  <div class="plant höst">
+    <img src="Växt22.jpg" alt="Höstaster">
+    <div class="info">
+      <h3>Höstaster</h3>
+      <p><strong>Blomning:</strong> Augusti–oktober<br>
+      <strong>Läge:</strong> Sol–halvskugga<br>
+      <strong>Höjd:</strong> 50–100 cm</p>
+    </div>
+  </div>
+
+
+  <div class="plant höst">
+    <img src="Växt23.jpg" alt="Kärleksört">
+    <div class="info">
+      <h3>Kärleksört</h3>
+      <p><strong>Blomning:</strong> September-oktober<br>
+      <strong>Läge:</strong> Sol<br>
+      <strong>Höjd:</strong> 30–60 cm</p>
+    </div>
+  </div>
+
+  
+
+</section>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => (document.getElementById('footer-placeholder').innerHTML = data));
+</script>
 
 <!-- Länka in header -->
   <script src="header.js"></script> 
+  <script src="tips.js"></script> 
  
 </body>
 

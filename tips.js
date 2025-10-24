@@ -16,3 +16,13 @@
     });
   }
 
+  function filterPlants(season) {
+    const plants = document.querySelectorAll('.plant');
+    plants.forEach(p => {
+      if (season === 'alla' || p.classList.contains(season)) {
+        p.style.display = 'block';
+      } else {
+        p.style.display = 'none';
+      }
+    });
+  }
