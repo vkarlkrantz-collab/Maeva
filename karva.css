@@ -1,0 +1,116 @@
+body {
+    background-color: #f7efe9;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 70px;
+  }
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(232, 228, 228, 0.5), rgba(245, 242, 242, 0.5)), url("halloween.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+  width: 100%;
+  max-height: 550px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.681);
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+    h1 {   
+
+        font-style: italic;
+        font-size: 5rem;
+        color: #000;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        text-align: center;
+        }
+        
+        h2 {
+            
+           font-size: 1.5rem;
+            color:#000;
+            margin:20px;
+         padding: 50px;
+            background-color:#ebded4
+        }
+        ol {
+ /*  list-style: Tar bort punkterna */
+    padding: 50px;       /* Tar bort eventuell indrag */
+   
+}
+
+
+p {
+ 
+    font-size:1.25rem;
+    
+
+}
+
+/*body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  margin:0px;
+  padding:0;
+  box-sizing: border-box;
+}
+*/
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  margin: 20px;
+  gap: 20px;
+  background-color:#ebded4;
+  padding: 20px;
+}
+
+/* Grid Items */
+.grid-item {
+  text-align: center;
+  border: 1px solid #ebded4;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color:#8a6851;
+  box-shadow: 0 4px 6px #ebded4;
+ 
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-item p {
+  padding: 10px;
+  font-size: 1.25rem;
+  color:ghostwhite;;
+}
+How It Works
+Grid Layout: The grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); ensures the grid adjusts dynamically to fit the screen size.
+Responsive Images: The img tag is styled to be fully responsive with width: 100%; height: auto;.
+Text Styling: Each grid item includes a caption or description below the image.
+You can replace photo1.jpg, photo2.jpg, etc., with your own image URLs or file paths. This layout is perfect for galleries, portfolios, or product displays!
