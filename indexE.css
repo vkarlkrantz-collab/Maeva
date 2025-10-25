@@ -273,13 +273,13 @@ letter-spacing: 0.8px;
 
 
 .tipsRuta h2 {
-  font-size: 20px;
+  font-size: 30px;
   color: #81a969;
   font-family: "Tangerine", cursive;
 }
 
 .tipsRuta p {
-  font-size: 12px;
+  font-size: 13px;
   color: #8a6851;
 }
 
@@ -684,14 +684,16 @@ font-size: 100px;
 }
 
 .tipsRuta h2 {
-  font-size: 17px;
+  font-size: 25px;
   color: #81a969;
   font-family: "Tangerine", cursive;
 }
 
 .tipsRuta p {
-  font-size: 10px;
+  font-size: 11px;
   color: #8a6851;
 }
+
+
 
 }
