@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f7efe9;
+  padding-top: 70px;
 }
 
 /* Intro-sektion */
@@ -26,13 +27,11 @@ body {
 .content-wrapper {
   display: flex;
   justify-content: center;
-  /* ÄNDRING BÖRJAR HÄR */
-  /* transform: scale(0.85);  <-- TA BORT DENNA RAD */
-  /* transform-origin: top center; <-- TA BORT DENNA RAD */
+  
   width: 100%; /* Lägg till för att fylla hela tillgängliga bredden */
   max-width: 1400px; /* Nytt: begränsa maxbredd så att 4 kort får plats fint */
   margin: 0 auto; /* Centrerar innehållet */
-  /* ÄNDRING SLUTAR HÄR */
+ 
 }
 
 /* Layout för innehållskorten */
@@ -98,7 +97,7 @@ h2 {
 
 /* Rubriker nivå 3 */
 h3 {
-  font-family: "Waterfall";
+  font-family: "Tangerine";
   font-size: 50px;
 }
 
@@ -110,4 +109,25 @@ h3 {
 main#content.content-with-footer-spacing,
 main.content-with-footer-spacing {
   padding-bottom: 10rem;
+}
+
+/* När skärmen är smalare än 1200px — visa 3 kort per rad */
+@media (max-width: 1200px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* När skärmen är smalare än 900px — visa 2 kort per rad */
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* När skärmen är smalare än 600px — visa 1 kort per rad */
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
 }

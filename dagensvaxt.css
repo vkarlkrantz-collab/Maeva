@@ -16,7 +16,7 @@
 
 /* === Rubriken "Dagens växt" i slumpkort === */
 .dagensvaxt .plant-card h2 {
-  font-family: 'Waterfall', cursive;
+  font-family: "Tangerine", cursive;
   font-size: 2.8em;
   color: #000;
   margin-top: 0;
@@ -81,6 +81,8 @@
   cursor: pointer;
 }
 
+
+/*Hoovereffekt*/
 .close-btn:hover {
   color: #333;
 }
@@ -89,5 +91,14 @@
  transform: scale(1.10);                /* Förstorar kortet */
   z-index: 10;                          /* Ligger över andra */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Starkare skugga */
+}
+.plant-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform, box-shadow;
+}
+
+.plant-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
