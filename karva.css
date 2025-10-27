@@ -70,13 +70,7 @@ p {
 
 }
 
-/*body {
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  margin:0px;
-  padding:0;
-  box-sizing: border-box;
-}
-*/
+
 /* Grid Container */
 .grid-container {
   display: grid;

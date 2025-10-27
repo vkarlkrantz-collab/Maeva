@@ -35,11 +35,12 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000;
+  font-family:"Tangerine", cursive; 
 }
     h1 {   
 
         font-style: italic;
-        font-size: 5rem;
+        font-size: 7.5rem;
         color: #000;
         margin-top: 60px;
         margin-bottom: 100px;
@@ -47,8 +48,10 @@ body, html {
 
         h2{
             text-align: center;
-            font-size:1.25rem;
-            margin:100px;
+            font-size:1.5rem;
+            margin-top:100px;
+            padding:100px;
+            background-color: #fcc0c5;
 
         }
 p {
@@ -58,13 +61,7 @@ p {
 
 }
 
-/*body {
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  margin:0px;
-  padding:0;
-  box-sizing: border-box;
-}
-*/
+
 /* Grid Container */
 .grid-container {
   display: grid;

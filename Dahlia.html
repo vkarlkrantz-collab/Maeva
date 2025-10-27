@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dahlia.css" type="text/css" > 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    
     <title> Maeva startsida </title>
+    </head>
+
+    <body>
+   <div id="header-placeholder"></div>
    
     <div class="hero-image">
   <div class="hero-text">
     <div class="responsive">
     <h1>Vinterförvaring av Dahlia.</h1>
-    <h2>Få tips och råd hur du kan förvara dina dahliaknölar under vintern.</h2>
+    
   </div>
 </div>
 </div>
@@ -35,3 +43,14 @@
       <p>Steg 4. <br>Lägg dahliaknölen upp och ner i kartongen så att eventuell fukt i stammen rinner ut och förhindrar att knölen ruttnar. Förvara kartongen svalt och luftigt.</p>
     </div>
   </div>
+
+  <script src="header.js"></script>
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => (document.getElementById('footer-placeholder').innerHTML = data));
+  </script>
+</body>
+</html>
