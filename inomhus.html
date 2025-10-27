@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maeva hemsida</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- CSS -->
+  <link rel="stylesheet" href="Styleviktor.css" />
+</head>
+
+<body>
+  <header>
+    <div id="header-placeholder"></div>
+  </header>
+
+  <img src="blomkrukorV.png" alt="startsida hero" class="herostart" />
+
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <main id="content" class="content-with-footer-spacing">
+    <section class="intro">
+      <h3>Inomhus</h3>
+      <h2>Inspiration för din inomhusmiljö</h2>
+    </section>
+
+    <!-- Wrapper runt content-sektionen för skalning och centrering -->
+    <div class="content-wrapper">
+      <section class="content">
+        <div id="random-plant-container"></div>
+
+        <article>
+          <a href="inomhusvaxter.html" class="card-link">
+            <img src="inomhusvaxter.png" alt="Ljusinsläpp växter" class="article-img" />
+            <h3>Inomhusväxter</h3>
+            <p></p>
+          </a>
+        </article>
+
+        <article>
+          <a href="#" class="card-link">
+            <img src="ljusinslappV.png" alt="Ljusinsläpp växter" class="article-img" />
+            <h3>Ljusinsläpp</h3>
+            <p></p>
+          </a>
+        </article>
+
+        <article>
+          <a href="#" class="card-link">
+            <img src="artiklarV.png" alt="Ljusinsläpp växter" class="article-img" />
+            <h3>Artiklar</h3>
+            <p></p>
+          </a>
+        </article>
+
+     
+  </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => (document.getElementById('footer-placeholder').innerHTML = data));
+  </script>
+
+  <!-- Modal -->
+  <div id="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-plant-content">
+        <!-- Innehåll från extern fil laddas här -->
+      </div>
+    </div>
+  </div>
+
+  <link rel="stylesheet" href="dagensvaxt.css" />
+  <script src="dagensvaxtV.js"></script>
+</body>
+</html>

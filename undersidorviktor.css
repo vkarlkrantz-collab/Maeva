@@ -1,0 +1,174 @@
+/* grund css */
+body {
+  background-color: #f7efe9;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 70px;
+}
+
+
+
+
+/* Layout endast för undersida med class "undersida-grid" på <body> */
+body.undersida-grid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h3 {
+  font-family: "Tangerine";
+  font-size: 50px;
+}
+
+.undersida-grid .content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 kolumner */
+  gap: 20px;
+  max-width: 1600px; /* Anpassad för 6 kort */
+  margin: 0 auto; /* Centrera hela gridsektionen */
+  padding: 40px 20px;
+}
+
+/* Kortens utseende */
+.undersida-grid .content article {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+.undersida-grid .content article:hover {
+  transform: translateY(-5px);
+}
+
+/* Bild i kort */
+.undersida-grid .article-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Länk som omsluter hela kortet */
+.undersida-grid .card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Rubrik i kort */
+.undersida-grid .card-link h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+/* Text i kort */
+.undersida-grid .card-link p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* === Responsivitet === */
+
+/* Mellanstora skärmar: 3 kolumner */
+@media (max-width: 1024px) {
+  .undersida-grid .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobiler: 1 kolumn */
+@media (max-width: 600px) {
+  .undersida-grid .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================= */
+/* Modal - grundstil */
+/* ========================= */
+.modal {
+  display: none; /* Göm modalen från början */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6); /* Mörk bakgrund */
+}
+
+/* Modal innehåll – bredare variant */
+.modal-content {
+  background-color: #fff;
+  margin: 5vh auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;              /* Nästan hela bredden */
+  max-width: 1000px;       /* Maxbredd på större skärmar */
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  overflow-y: auto;
+  max-height: 90vh;        /* Så att modalen inte går utanför skärmen på höjden */
+}
+
+/* Responsiv modal – mobilanpassning */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    max-width: 100%;
+    margin: 5vh auto;
+  }
+}
+
+/* Stäng-kryss */
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal .close:hover {
+  color: #000;
+}
+
+/* Begränsa bildstorlek i modal */
+.modal-content img {
+  width: 33%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto; /* centrerad med lite luft under */
+}
+
+/* Filtreringsknapparna */
+.filter-tags {
+  display: flex;                   /* Gör så att knappar ligger på rad */
+  justify-content: center;         /* Centrerar knapparna horisontellt */
+  gap: 1em;                       /* Mellanrum mellan knapparna */
+  margin-bottom: 2em;             /* Marginal under filterraden */
+}
+
+.filter-tag {
+  padding: 0.5em 1em;             /* Inre avstånd i knappar */
+  border: none;                   /* Tar bort standardram */
+  cursor: pointer;                /* Visar hand-pointer när man hovrar */
+  background-color: #e0e0e0;     /* Ljusgrå bakgrund */
+  border-radius: 8px;             /* Runda hörn */
+  font-weight: bold;              /* Fet stil på texten */
+  transition: background-color 0.3s; /* Mjuk övergång på färg vid hover/aktiv */
+}
+
+.filter-tag.active {
+  background-color: #c0392b;      /* Röd bakgrund när aktiv */
+  color: white;                   /* Vit text när aktiv */
+}

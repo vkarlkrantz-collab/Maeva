@@ -1,0 +1,133 @@
+/* Grundinställningar för body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7efe9;
+  padding-top: 70px;
+}
+
+/* Intro-sektion */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* storlek och skugga på herobild */
+.herostart {
+  width: 100%;
+  max-height: 550px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.681);
+}
+
+/* Wrapper runt kortsektion – ÄNDRAD */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  
+  width: 100%; /* Lägg till för att fylla hela tillgängliga bredden */
+  max-width: 1400px; /* Nytt: begränsa maxbredd så att 4 kort får plats fint */
+  margin: 0 auto; /* Centrerar innehållet */
+ 
+}
+
+/* Layout för innehållskorten */
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* ÄNDRAD från auto-fit till exakt 4 kolumner */
+  gap: 20px;
+}
+
+/* Stil för varje artikel (kort) */
+.content article {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+/* Hover-effekt för kort */
+.content article:hover {
+  transform: scale(1.10);
+  z-index: 10;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Stil för bilder i kort */
+.article-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Klickbara länkar som omsluter hela kortet */
+.card-link {
+  display: block !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  height: 100% !important;
+  cursor: pointer !important;
+}
+
+/* Samma för hover, fokus och aktivt läge */
+.card-link:hover,
+.card-link:focus,
+.card-link:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Textstyling för paragrafer */
+p {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 12px;
+}
+
+/* Rubriker nivå 2 */
+h2 {
+  font-family: "Times New Roman";
+}
+
+/* Rubriker nivå 3 */
+h3 {
+  font-family: "Tangerine";
+  font-size: 50px;
+}
+
+/* Ge konsekvent avstånd mellan sista innehållet och footer */
+.content-with-footer-spacing {
+  padding-bottom: 4rem;
+}
+
+main#content.content-with-footer-spacing,
+main.content-with-footer-spacing {
+  padding-bottom: 10rem;
+}
+
+/* När skärmen är smalare än 1200px — visa 3 kort per rad */
+@media (max-width: 1200px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* När skärmen är smalare än 900px — visa 2 kort per rad */
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* När skärmen är smalare än 600px — visa 1 kort per rad */
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

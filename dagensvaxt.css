@@ -1,0 +1,104 @@
+/* === Gemensamt för alla kort === */
+.plant-card {
+  border-radius: 8px;
+  background: white;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+}
+
+.article-img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+/* === Rubriken "Dagens växt" i slumpkort === */
+.dagensvaxt .plant-card h2 {
+  font-family: "Tangerine", cursive;
+  font-size: 2.8em;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+/* === Dagens växt === */
+.dagensvaxt #random-plant-container {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.dagensvaxt .plant-card {
+  max-width: 300px;
+}
+
+/* === Galleri (inomhusväxter) === */
+.inomhusgalleri #plant-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  padding: 2em;
+}
+
+.inomhusgalleri .plant-card {
+  width: 200px;
+  font-family: Arial, sans-serif;
+}
+
+/* === Modal === */
+#modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2em;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  color: #999;
+  cursor: pointer;
+}
+
+
+/*Hoovereffekt*/
+.close-btn:hover {
+  color: #333;
+}
+
+.plant-card:hover {
+ transform: scale(1.10);                /* Förstorar kortet */
+  z-index: 10;                          /* Ligger över andra */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Starkare skugga */
+}
+.plant-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform, box-shadow;
+}
+
+.plant-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
