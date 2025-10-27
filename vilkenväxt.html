@@ -17,8 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
   <!-- Typsnitt och ikoner -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet" />
-  Importerar Google-fonten "Waterfall" -->
+ <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet" />
+  Importerar Google-fonten "Waterfall" 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <!-- Importerar Font Awesome för att kunna använda ikoner -->
@@ -39,14 +39,6 @@
     <!-- Här laddas innehållet från header.html in -->
   </header>
 
-  <script>
-    // Hämtar headern från extern fil och placerar den i header-placeholder
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      });
-  </script>
 
   <main class="content-with-footer-spacing">
     <!-- Huvudinnehållet, med extra utrymme för footern -->
@@ -318,5 +310,21 @@
       });
     });
   </script>
+  <!-- Footer -->
+  <footer><!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => (document.getElementById('footer-placeholder').innerHTML = data));
+  </script> </footer>
+
+
+<script src="header.js"></script>
+
+<!--<script src="script.js"> </script> denna är för att länka i javascript, brukar ligga längst ner, ändra namn på src-->
+</body>
+
+</html>
 </body>
 </html>
