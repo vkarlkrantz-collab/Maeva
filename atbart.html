@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balkong undersida</title>
+
+  <!-- Typsnitt och ikoner (valfritt) -->
+    <!-- === GOOGLEFONTS === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS-filer -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="undersidor.css" />
+</head>
+
+
+<body class="undersida-grid">
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
+  
+    <main>
+        <h1 style="text-align: center;">Mer info kommer inom kort!</h1>
+        
+    </div>
+
+    <section class="content">
+      <article>
+        <a href="#" class="card-link">
+          <img src="pesticide.png" class="article-img" alt="Växt 1" />
+          <h3>info</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis debitis numquam praesentium facilis cumque autem fugiat dolorum iste labore illum, cum illo possimus. Illum, quasi? Voluptates molestias provident tempore.</p>
+        </a>
+      </article>
+      <article>
+        <a href="#" class="card-link">
+          <img src="pesticide.png" class="article-img" alt="Växt 2" />
+          <h3>Info</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias.. </p>
+        </a>
+      </article>
+      <article>
+        <a href="#" class="card-link">
+          <img src="pesticide.png" class="article-img" alt="Växt 3" />
+          <h3>info</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias...</p>
+        </a>
+      </article>
+      <article>
+        <a href="#" class="card-link">
+          <img src="pesticide.png" class="article-img" alt="Växt 4" />
+          <h3>info</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ... </p>
+        </a>
+      </article>
+      <article>
+        <a href="#" class="card-link">
+          <img src="pesticide.png" class="article-img" alt="Växt 5" />
+          <h3>info</h3>
+          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ...</p>
+        </a>
+      </article>
+      <article>
+        <a href="#" class="card-link">
+          <img src="pesticide.png" class="article-img" alt="Växt 6" />
+          <h3>info</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias ...</p>
+        </a>
+      </article>
+
+
+      
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => (document.getElementById('footer-placeholder').innerHTML = data));
+  </script>
+
+  <script src="header.js"></script>
+</body>
+</html>

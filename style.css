@@ -1,0 +1,411 @@
+/* === Grundinställningar === */
+body {
+    background-color: #f7efe9;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 70px;
+  }
+  
+  p {
+    font-family: "Times New Roman";
+    text-align: center;
+    font-size: 15;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  
+  h1 {
+    font-size: 90px;
+    text-align: center;
+    color:#000000;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-family: "Tangerine", cursive;
+  }
+  
+  h2 {font-family: "Tangerine", cursive;
+    font-size: 40px;
+    color:#000000;
+    margin-bottom: 10px;
+  
+  }
+  
+  h3 {font-family: "Times New Roman";
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  
+  /* === HEADER === */
+  
+  
+  /* === Hero och BALKONGALTERNATIV === */
+  
+  .hero {
+    background-color: #e6d8cf;
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    width: 100%;
+    max-height: 550px;
+  }
+  
+  
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .balcony-choices {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f8f8; 
+  }
+  
+  .balcony-choices h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #2d4739; 
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .balcony-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #bfecac; 
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .balcony-btn:hover {
+    background-color: #ebded4;
+    transform: scale(1.05);
+  }
+  
+  .plant-result {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .plant-result h3 {
+    color: #2d4739;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .plant-card {
+    text-align: center;
+    background-color: #f6f9f6;
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .plant-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .plant-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .plant-card p {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #2d4739;
+  }
+  
+  
+  
+  /* === "HEAAAADER" === */
+  
+  .introb {
+    background-image: url("pixx/Skärmavbild 2025-10-22 kl. 12.17.41.png"); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    text-align: center; 
+    font-family: Tangerine;
+    font-size: 100px;
+    padding: 90px 20px;
+  }
+  
+  .introb::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1); 
+    z-index: 0; 
+  }
+  
+  .introb h1 {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .introoss {
+    background-image: url("pixx/Skärmavbild 2025-10-22 kl. 13.03.32.png"); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    text-align: center; 
+    font-family: Tangerine;
+    font-size: 100px;
+    padding: 90px 20px;
+  }
+  
+  .introoss::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1); 
+    z-index: 0; 
+  }
+  
+  .introoss h1 {
+    position: relative;
+    z-index: 1; 
+  }
+  
+  
+  /* === Huvudinnehåll === */
+  
+  main {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 20px;
+  }
+  
+  .intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .content article {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .content article:hover {
+    transform: scale(1.10);
+    z-index: 10;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .article-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  .card-link {
+    display: block !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    height: 100% !important;
+    cursor: pointer !important;
+  }
+  
+  .card-link:hover,
+  .card-link:focus,
+  .card-link:active {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  
+  /* FAQ */
+  
+  .fac {
+    text-align: center;
+  }
+  
+  .faq-item {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .faq-question {
+    width: 50%;
+    background: #fcc0c5;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .faq-question:hover {
+    background: #bfecac;
+  }
+  
+  .faq-answer {
+    display: none;
+    background: white;
+    padding: 1rem;
+    border-left: 3px solid #81a969;
+    border-radius: 0 0 8px 8px;
+    margin-top: 0.2rem;
+  }
+  
+  /* Kontaktformulär */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input,
+  textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"] {
+    background: #fcc0c5;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background: #bfecac;
+  }
+  
+  
+  
+  /* === Responsiv design === */
+  @media (max-width: 800px) {
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .header {
+      justify-content: center; 
+      position: fixed;
+      width: 100%;
+      height: auto;
+    }
+  
+    
+    .logo img {
+      position: relative;
+      margin: auto;
+      max-height: 60px;
+    }
+  
+    .meny {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 200px;
+      height: 100%;
+      background-color: #fff;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+      transition: left 0.3s ease;
+      padding-top: 80px;
+    }
+    
+    .meny.open {
+      left: 0;
+    }
+    
+    .meny ul {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .meny a {
+      display: block;
+      padding: 15px;
+      text-align: left;
+    }
+  
+    h1 {
+      font-size: 60px;
+    }
+    
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero {
+      padding: 60px 20px;
+    }
+  
+    .hero h2 {
+      font-size: 2em;
+    }
+  }
+  

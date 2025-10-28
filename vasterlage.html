@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balkong - Västerläge</title>
+
+  <!-- Typsnitt från Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS-filer -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="undersidor.css" />
+</head>
+
+<body class="undersida-grid">
+
+  <!-- Header -->
+  <header>
+    <div id="header-placeholder"></div>
+  </header>
+
+  <!-- Huvudinnehåll -->
+  <main>
+    <!-- Sidrubrik -->
+    <header class="page-header">
+      <h1>Västerläge</h1>
+      <p>Om du har en balkong i västerläge kommer här några exempel på växter som trivs extra bra just här!</p>
+    </header>
+
+    <!-- Växtkort -->
+    <section class="content">
+
+      <article class="plant-card">
+        <a href="#" class="card-link">
+          <img src="pixx/rosmarin.png" class="article-img" alt="Rosmarin" />
+          <h2>Rosmarin</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias omnis debitis numquam praesentium faci...</p>
+        </a>
+      </article>
+
+      <article class="plant-card">
+        <a href="#" class="card-link">
+          <img src="pixx/salvia.png" class="article-img" alt="Salvia" />
+          <h2>Salvia</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias..</p>
+        </a>
+      </article>
+
+      <article class="plant-card">
+        <a href="#" class="card-link">
+          <img src="pixx/jordgubb.png" class="article-img" alt="Jordgubbar" />
+          <h2>Jordgubbar</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias...</p>
+        </a>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => (document.getElementById('footer-placeholder').innerHTML = data));
+  </script>
+
+<script src="header.js"></script>
+</body>
+</html>
